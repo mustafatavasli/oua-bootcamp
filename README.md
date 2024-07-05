@@ -5,6 +5,8 @@ Flutter Grup 82
 
 |         |    İsmi     |    Görevi    |
 |------   | :----------: |----------|
-| Satır 1 | Satır 1, Hücre 2 | Satır 1, Hücre 3 |
-| Satır 2 | Satır 2, Hücre 2 | Satır 2, Hücre 3 |
-| Satır 3 | Satır 3, Hücre 2 | Satır 3, Hücre 3 |
+| Satır 1 | Selinay CEYLAN | Scrum Master |
+| Satır 2 | Mustafa TAVASLI | Developer |
+| Satır 3 | Sena GÜMÜŞTEKİN | Developer |
+| Satır 4 | Muhammed Yiğit ÖZGÜL | Developer |
+| Satır 3 | Serhat KUMAS  | Developer |
