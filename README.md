@@ -26,3 +26,10 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 * Sisteme kayıt olurken kullanıcının bilgileri telefonundaki sağlık uygulamasından alınmaktadır.
 * Kullanıcı, ilaçlarını düzenli olarak alması gerektiği zamanlarda hatırlatıcılarla bilgilendirilmektedir.
 * Kullanıcı bir sağlık problemi yaşadığında sisteme kayıt olurken bilgilerini eklediği yakınlarına SMS yoluyla mesaj gönderilmektedir.
+
+## Hedef Kitle
+* Kronik Hastalığı Olan Bireyler
+* Yaşlılar ve Bakım İhtiyacı Olan Bireyler
+* Alerjik Reaksiyon Riski Taşıyan Bireyler
+* Sağlık Çalışanları
+  
