@@ -21,3 +21,6 @@ Sağlık Pusulası
 Sağlık Pusulası, sisteme kayıtlı olan kullanıcıların herhangi bir sağlık sorunu yaşaması durumunda olay yerindeki insanların ilk yardım amacıyla kullanıcının hastalığına göre ne yapması gerektiğini söylemektedir. Olay yerine gelen sağlık görevlilerine de kullanıcının kan grubu, mevcut hastalıkları, kullandığı ilaçlar ve alerjileri gibi genel sağlık bilgilerini göstermektedir. Bu sayede ilk yardım esnasında uygulanacak olan tedavi yöntemi kolay bir şekilde belirlenir ve olay yerinde doğru müdahale yapılması sağlanır. 
 
 Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilmektedir. Misafir girişini kullanan kişiler, sistemimizi kullanamayacaklardır. Yapay zeka yardımıyla hastalıklar hakkında bilgilendirmelere ulaşılabilmektedir ve sağlık görevlileri gelmeden hastaya nasıl yardım edebileceğini öğrenebilmektedir. Kullanıcı girşini kullanan kişilerden kayıt esnasında kalp atış hızı, kan grubu, hastalıkları gibi bilgileri alınacaktır. Kullanıcı bir sağlık sorunu yaşadığında uygulamamız kilit ekranına bir şifre göndermektedir ve sağlık ekipleri geldiğinde bu şifre ile kullanıcının bilgilerine ulaşabilmektedir.
+
+## Ürün Özellikleri
+* Sisteme
