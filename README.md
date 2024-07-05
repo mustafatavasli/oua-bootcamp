@@ -4,9 +4,9 @@ Flutter Grup 82
 ## Takım Üyeleri
 
 |         |    İsmi     |    Görevi    |
-|------   | :----------: | :----------: |
+|  ------   | :----------: | :----------: |
 | 1 | Selinay CEYLAN | Scrum Master |
-| 2 | Mustafa TAVASLI | Developer |
+| 2 | Mustafa TAVASLI | Product Owner |
 | 3 | Sena GÜMÜŞTEKİN | Developer |
 | 4 | Muhammed Yiğit ÖZGÜL | Developer |
 | 5 | Serhat KUMAS  | Developer |
@@ -23,4 +23,6 @@ Sağlık Pusulası, sisteme kayıtlı olan kullanıcıların herhangi bir sağl�
 Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilmektedir. Misafir girişini kullanan kişiler, sistemimizi kullanamayacaklardır. Yapay zeka yardımıyla hastalıklar hakkında bilgilendirmelere ulaşılabilmektedir ve sağlık görevlileri gelmeden hastaya nasıl yardım edebileceğini öğrenebilmektedir. Kullanıcı girşini kullanan kişilerden kayıt esnasında kalp atış hızı, kan grubu, hastalıkları gibi bilgileri alınacaktır. Kullanıcı bir sağlık sorunu yaşadığında uygulamamız kilit ekranına bir şifre göndermektedir ve sağlık ekipleri geldiğinde bu şifre ile kullanıcının bilgilerine ulaşabilmektedir.
 
 ## Ürün Özellikleri
-* Sisteme
+* Sisteme kayıt olurken kullanıcının bilgileri telefonundaki sağlık uygulamasından alınmaktadır.
+* Kullanıcı, ilaçlarını düzenli olarak alması gerektiği zamanlarda hatırlatıcılarla bilgilendirilmektedir.
+* Kullanıcı bir sağlık problemi yaşadığında sisteme kayıt olurken bilgilerini eklediği yakınlarına SMS yoluyla mesaj gönderilmektedir.
