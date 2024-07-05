@@ -18,4 +18,4 @@ Flutter Grup 82
 Sağlık Pusulası
 
 ## Ürün Açıklaması
-Uygulamamız sisteme kayıtlı olan kullanıcıların herhangi bir sağlık sorunu yaşaması durumunda olay yerindeki insanların ilk yardım hakkında kullanıcının hastalığına göre ne yapması gerektiğini söyleyecek, olay yerine gelen sağlık görevlilerine kullanıcının kan grubu, mevcut hastalıkları, kullandığı ilaçlar ve alerjileri gibi genel sağlık bilgilerini gösterecektir.
+Sağlık Pusulası, sisteme kayıtlı olan kullanıcıların herhangi bir sağlık sorunu yaşaması durumunda olay yerindeki insanların ilk yardım hakkında kullanıcının hastalığına göre ne yapması gerektiğini söyleyecek, olay yerine gelen sağlık görevlilerine de kullanıcının kan grubu, mevcut hastalıkları, kullandığı ilaçlar ve alerjileri gibi genel sağlık bilgilerini gösterecektir. Bu sayede ilk yardım esnasında uygulanacak olan tedavi yöntemi kolay bir şekilde belirlenecek ve  olay yerinde doğru müdahale yapılması sağlanacaktır.
