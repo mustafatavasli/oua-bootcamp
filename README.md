@@ -12,5 +12,7 @@ Flutter Grup 82
 | 3 | Serhat KUMAS  | Developer |
 
 
+# Uygulama ile İlgili Bilgiler
+
 ## Uygulama İsmi
 Sağlık Pusulası
