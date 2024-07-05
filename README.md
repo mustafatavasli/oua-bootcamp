@@ -12,7 +12,10 @@ Flutter Grup 82
 | 3 | Serhat KUMAS  | Developer |
 
 
-# Uygulama ile İlgili Bilgiler
+# Ürün ile İlgili Bilgiler
 
-## Uygulama İsmi
+## Ürün İsmi
 Sağlık Pusulası
+
+## Ürün Açıklaması
+Uygulamamız sisteme kayıtlı olan kullanıcıların herhangi bir sağlık sorunu yaşaması durumunda olay yerindeki insanların ilk yardım hakkında kullanıcının hastalığına göre ne yapması gerektiğini söyleyecek, olay yerine gelen sağlık görevlilerine kullanıcının kan grubu, mevcut hastalıkları, kullandığı ilaçlar ve alerjileri gibi genel sağlık bilgilerini gösterecektir.
