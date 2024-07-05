@@ -10,3 +10,7 @@ Flutter Grup 82
 | 3 | Sena GÜMÜŞTEKİN | Developer |
 | 4 | Muhammed Yiğit ÖZGÜL | Developer |
 | 3 | Serhat KUMAS  | Developer |
+
+
+## Uygulama İsmi
+Sağlık Pusulası
