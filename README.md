@@ -3,7 +3,7 @@ Flutter Grup 82
 
 ## Takım Üyeleri
 
-|         | Başlık 2 | Başlık 3 |
+|         |    İsmi     |    Görevi    |
 |------   | :----------: |----------|
 | Satır 1 | Satır 1, Hücre 2 | Satır 1, Hücre 3 |
 | Satır 2 | Satır 2, Hücre 2 | Satır 2, Hücre 3 |
