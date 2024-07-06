@@ -45,16 +45,8 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
     <li>Proje yönetimi için Trello uygulaması kullanılmaktadır.</li>
   </ul>
 
-   <h3>Tahmin Edilen Tamamlanacak Puan</h3> 
-   <ul>
-    <li>30 Puan</li>
-  </ul>
-
   ### Tahmin Edilen Tamamlanacak Puan
-- 30 Puan
-
-  ### Tahmin Edilen Tamamlanacak Puan: 30 Puan
-
+* 30 Puan
 
    <h3>Tahmin Mantığı</h3>
    <ul>
