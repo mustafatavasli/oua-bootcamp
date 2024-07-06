@@ -41,10 +41,12 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   
   <h3>Sprint Notları</h3>
   <ul>
-    <li>Not 1</li>
-    <li>Not 2</li>
-    <li>Not 3</li>
+    <li>UI tasarımlarında Figma uygulaması kullanılmaktadır.</li>
+    <li>Proje yönetimi için Trello uygulaması kullanılmaktadır.</li>
   </ul>
+
+   <h3>Tahmin Edilen Tamamlanacak Puan</h3> :30 Puan
+  
   
 </details>
 
