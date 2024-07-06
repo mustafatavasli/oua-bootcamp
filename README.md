@@ -53,6 +53,9 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   ### Tahmin Edilen Tamamlanacak Puan
 - 30 Puan
 
+  ### Tahmin Edilen Tamamlanacak Puan: 30 Puan
+
+
    <h3>Tahmin Mantığı</h3>
    <ul>
     <li>Proje boyunca tamamlanması gereken backlog puanı 30'dur. İlk sprint için bitirilmesi gereken puan 8 olarak belirlenmiştir ve hedefe ulaşılmıştır.</li>
