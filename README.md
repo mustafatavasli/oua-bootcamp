@@ -34,4 +34,10 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 * Yaşlılar ve Bakım İhtiyacı Olan Bireyler
 * Alerjik Reaksiyon Riski Taşıyan Bireyler
 * Sağlık Çalışanları
+
+
+<details>
+  <summary>Sprint1</summary>
+  <p>Buraya, başlığa tıklandığında açılacak yazıyı yazabilirsiniz. Markdown desteklenir.</p>
+</details>
   
