@@ -45,8 +45,18 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
     <li>Proje yönetimi için Trello uygulaması kullanılmaktadır.</li>
   </ul>
 
-   <h3>Tahmin Edilen Tamamlanacak Puan</h3> :30 Puan
-  
+   <h3>Tahmin Edilen Tamamlanacak Puan</h3> 
+   30 Puan
+
+   <h3>Tahmin Mantığı</h3>
+   Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk sprint için bitirilmesi gereken puan 8 olarak belirlenmiştir ve hedefe ulaşılmıştır.
+
+   <h3>Daily Scrum</h3>
+   Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır.
+
+   <details>
+  <summary><h2>Sprint Board Updates</h2></summary>
+  </details>
   
 </details>
 
