@@ -37,7 +37,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 
 
 <details>
-  <summary>Sprint1</summary>
-  <p>Buraya, başlığa tıklandığında açılacak yazıyı yazabilirsiniz. Markdown desteklenir.</p>
+  <summary><h2>Sprint 1</h2></summary>
+  <p>Bu özellik projenin şöyle şöyle çalışmasını sağlar...</p>
 </details>
   
