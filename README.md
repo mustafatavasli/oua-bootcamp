@@ -38,9 +38,15 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 
 <details>
   <summary><h1>Sprint 1</h1></summary>
-  <p>
-    <strong>Sprint Notları</strong>
-  </p>
+  
+  <h3>Sprint Notları</h3>
+  <ul>
+    <li>Not 1</li>
+    <li>Not 2</li>
+    <li>Not 3</li>
+  </ul>
+  
 </details>
+
 
   
