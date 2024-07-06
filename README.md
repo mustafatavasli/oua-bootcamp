@@ -46,13 +46,20 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   </ul>
 
    <h3>Tahmin Edilen Tamamlanacak Puan</h3> 
-   30 Puan
+   <ul>
+    <li>30 Puan</li>
+  </ul>
 
    <h3>Tahmin Mantığı</h3>
-   Proje boyunca tamamlanması gereken backlog puanı 30'dur. İlk sprint için bitirilmesi gereken puan 8 olarak belirlenmiştir ve hedefe ulaşılmıştır.
+   <ul>
+    <li>Proje boyunca tamamlanması gereken backlog puanı 30'dur. İlk sprint için bitirilmesi gereken puan 8 olarak belirlenmiştir ve hedefe ulaşılmıştır.</li>
+  </ul>
 
    <h3>Daily Scrum</h3>
    Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır.
+   <ul>
+    <li>   Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır.</li>
+  </ul>
 
    <details>
   <summary><h3>Sprint Board Updates</h3></summary>
