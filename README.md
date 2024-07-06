@@ -55,7 +55,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
    Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır.
 
    <details>
-  <summary><h2>Sprint Board Updates</h2></summary>
+  <summary><h3>Sprint Board Updates</h3></summary>
   </details>
   
 </details>
