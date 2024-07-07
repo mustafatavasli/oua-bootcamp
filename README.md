@@ -17,9 +17,6 @@ Flutter Grup 82
 ## Ürün İsmi
 Sağlık Pusulası
 
-## Product Backlog URL
-[F82 Product Backlog URL]([https://github.com](https://trello.com/invite/b/3TDOCslC/ATTI0edd6c40703b14513f90af80949ac0f5491194AF/saglik-pusulasi-f82))
-
 ## Ürün Açıklaması
 Sağlık Pusulası, sisteme kayıtlı olan kullanıcıların herhangi bir sağlık sorunu yaşaması durumunda olay yerindeki insanların ilk yardım amacıyla kullanıcının hastalığına göre ne yapması gerektiğini söylemektedir. Olay yerine gelen sağlık görevlilerine de kullanıcının kan grubu, mevcut hastalıkları, kullandığı ilaçlar ve alerjileri gibi genel sağlık bilgilerini göstermektedir. Bu sayede ilk yardım esnasında uygulanacak olan tedavi yöntemi kolay bir şekilde belirlenir ve olay yerinde doğru müdahale yapılması sağlanır. 
 
@@ -37,6 +34,9 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 * Yaşlılar ve Bakım İhtiyacı Olan Bireyler
 * Alerjik Reaksiyon Riski Taşıyan Bireyler
 * Sağlık Çalışanları
+
+## Product Backlog URL
+[F82 Product Backlog URL](https://trello.com/invite/b/3TDOCslC/ATTI0edd6c40703b14513f90af80949ac0f5491194AF/saglik-pusulasi-f82)
 
 
 <details>
