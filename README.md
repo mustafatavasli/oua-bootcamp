@@ -64,6 +64,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   <details>
   <summary><h3>Screenshots</h3></summary>
 
+ ### Başlangıç ve Giriş Ekranları
   <table>
   <tr>
     <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Splash%20Screen%20(Completed).png?raw=true" alt="Splash Screen" width="200"/></td>
