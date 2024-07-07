@@ -126,7 +126,9 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   <h3>Sprint Retroperspective</h3>
   <ul>
+    <li>Sprint planlama toplantılarında tüm takım üyeleri aktif katılım sağladı ve yapılacak işler net bir şekilde belirlendi.</li>
     <li>İkinci sprint için backend ve API işlemlerinin yapılmasına karar verilmiştir.</li>
+    <li>Gelecek sprint'te görev dağılımını daha dengeli yapmak için görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak bir plan yapılacak. Ayrıca, günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
   </ul>
   
 </details>
