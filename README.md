@@ -54,7 +54,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 
 
   ### Daily Scrum
-Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır, bu sayede zaman tasarrufu yapılarak iş süreçleri daha verimli hale getirilmiştir.  
+Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üzerinden görüşmeler sağlanmıştır, bu sayede zaman tasarrufu yapılarak iş süreçleri daha verimli hale getirilmiştir.  
    <details>
   <summary><h3>Sprint Board Updates</h3></summary>
   </details>
