@@ -83,6 +83,25 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 </table>
 
 
+<table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/İlaç%20Hatırlatıcı%20Sekmesi%20(Completed).png?raw=true" alt="Splash Screen" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/İlaç%20Hatırlatıcı%20Ekleme%20Sekmesi%20(Completed).png?raw=true" alt="Screen 1" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Alerjiler%20Sekmesi%20(Completed).png?raw=true" alt="Screen 2" width="200"/></td>
+   <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Alerji%20Ekleme%20Sekmesi%20(Completed).png?raw=true" alt="Screen 2" width="200"/></td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Yakınlarım%20Sekmesi%20(Completed).png?raw=true" alt="Splash Screen" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Yakınlarım%20Ekleme%20Sekmesi%20(Completed).png?raw=true" alt="Screen 1" width="200"/></td>
+  </tr>
+</table>
+
+
 </details>
 
 
