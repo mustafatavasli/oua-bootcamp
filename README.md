@@ -43,7 +43,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   <ul>
     <li>UI tasarımlarında Figma uygulaması kullanılmaktadır.</li>
     <li>Proje yönetimi için Trello uygulaması kullanılmaktadır.</li>
-     <li>Ürün için giriş sistemi olarak e-posta ve Google ile giriş seçenekleri belirlenmiştir.</li>
+     <li>Ürün için giriş sistemi olarak e-posta ve Google ile giriş yapılmaktadır.</li>
   </ul>
 
   ### Tahmin Edilen Tamamlanacak Puan
