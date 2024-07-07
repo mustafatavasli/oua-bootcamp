@@ -53,7 +53,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   350 Puan
 
   ### Tahmin Mantığı
-  Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk sprint için bitirilmesi gereken puan 105 olarak belirlenmiştir ve hedefe ulaşılmıştır.
+  Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk sprint için bitirilmesi gereken puan 115 olarak belirlenmiştir ve hedefe ulaşılmıştır.
 
 
   ### Daily Scrum
@@ -63,9 +63,9 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
    <details>
   <summary><h3>Sprint Board Updates</h3></summary>
 
-![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-07%2019.49.26.png)
+![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-07%2022.10.23.png)
 
-![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-07%2019.49.48.png)
+![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-07%2022.12.00.png)
 
 
 
