@@ -43,6 +43,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   <ul>
     <li>UI tasarımlarında Figma uygulaması kullanılmaktadır.</li>
     <li>Proje yönetimi için Trello uygulaması kullanılmaktadır.</li>
+     <li>Ürün için giriş sistemi olarak e-posta ve Google ile giriş seçenekleri belirlenmiştir.</li>
   </ul>
 
   ### Tahmin Edilen Tamamlanacak Puan
@@ -53,8 +54,7 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
 
 
   ### Daily Scrum
-  Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır.
-  
+Daha kolay ve ulaşılabilir olduğu için Whatshapp uygulaması üzerinden görüşmeler sağlanmıştır, bu sayede zaman tasarrufu yapılarak iş süreçleri daha verimli hale getirilmiştir.  
    <details>
   <summary><h3>Sprint Board Updates</h3></summary>
   </details>
@@ -64,8 +64,17 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
   </details>
 
   <h3>Sprint Review</h3>
+  <ul>
+    <li>Yiğit ve Sena'nın önerileri doğrultusunda, uygulamanın ismi "Sağlık Pusulası" olarak belirlendi. Proje ekibi, isim seçimi sürecinde pek çok seçenek değerlendirdi. Kullanıcı dostu ve akılda kalıcı bir isim üzerinde uzlaşıldı.</li>
+    <li>Mustafa ve Selinay, UI tasarımının büyük bir kısmını tamamlamak için iş birliği içinde çalıştı. Sürekli iletişim halinde kalarak, fikir alışverişinde bulundular ve her aşamada birbirlerinin geri bildirimlerini dikkate aldılar. </li>
+    <li>Bu sprintte karşılaşılan sorun logonun belirlenmesi oldu. </li>
+     <li>Sprint süreci son derece verimli ve başarılı bir şekilde geçirilmiştir. Takım üyeleri, her aşamada birbirleriyle uyum içinde çalışarak belirlenen hedeflere ulaşmak için ortak kararlar almışlardır. Takımın bu çalışması, sürecin sorunsuz ilerlemesini sağlamış ve belirlenen sprint hedeflerine zamanında ve eksiksiz ulaşılmasına olanak tanımıştır. </li>
+  </ul>
 
   <h3>Sprint Retroperspective</h3>
+  <ul>
+    <li>İkinci sprint için backend ve API işlemlerinin yapılmasına karar verilmiştir.</li>
+  </ul>
   
 </details>
 
