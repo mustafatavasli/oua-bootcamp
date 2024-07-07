@@ -74,7 +74,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   </tr>
 </table>
 
-
+ ### Anasayfa ve Kart Ekranları
 <table>
   <tr>
     <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Home%20Screen%20(Completed).png?raw=true" alt="Splash Screen" width="200"/></td>
@@ -83,7 +83,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   </tr>
 </table>
 
-
+### İlaç Hatırlatıcı ve Alersiler Ekranları
 <table>
   <tr>
     <td><img src="https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/Screenshots/Alerjiler%20Sekmesi%20(Completed).png" alt="Ssplash Screen" width="200"/></td>
@@ -94,7 +94,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 </table>
 
 
-
+### Yakınlarım Ekranları
 <table>
   <tr>
     <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Yakınlarım%20Sekmesi%20(Completed).png?raw=true" alt="Splash Screen" width="200"/></td>
