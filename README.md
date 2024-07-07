@@ -74,6 +74,15 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 </table>
 
 
+<table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Home%20Screen%20(Completed).png?raw=true" alt="Splash Screen" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/User%20Card%20Screen%20(Completed).png?raw=true" alt="Screen 1" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Guest%20Card%20Screen%20(Completed).png?raw=true" alt="Screen 2" width="200"/></td>
+  </tr>
+</table>
+
+
 </details>
 
 
