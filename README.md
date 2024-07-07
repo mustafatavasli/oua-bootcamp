@@ -63,7 +63,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   <details>
   <summary><h3>Screenshots</h3></summary>
-    ![Splash Screen](https://github.com/mustafatavasli/oua-bootcamp/blob/main/Screenshots/Splash%20Screen%20(Completed).png?raw=true)
+    ![Splash Screen](https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Splash%20Screen%20(Completed).png?raw=true)
   </details>
 
   <h3>Sprint Review</h3>
