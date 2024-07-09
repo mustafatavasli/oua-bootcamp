@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ouabootcamp/pages/view/HomeScreen.dart';
+import 'package:ouabootcamp/pages/view/homepage/HomeScreen.dart';
 import 'package:ouabootcamp/pages/view/LoginScreen.dart';
 import 'package:ouabootcamp/pages/view/SignUpScreen.dart';
 
@@ -14,7 +14,7 @@ class IntroScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('images/ıntroscreen.png'), // Replace with your image asset
+            Image.asset('assets/images/ıntroscreen.png'), // Replace with your image asset
             SizedBox(height: 20),
             Container(
               margin: EdgeInsets.only(right: 70),
@@ -77,9 +77,10 @@ class IntroScreen extends StatelessWidget {
 
             TextButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => HomeScreen(),
+                  ),
                 );
               },
               child: Text('Misafir Girişi',style: TextStyle(color: Colors.black),),
