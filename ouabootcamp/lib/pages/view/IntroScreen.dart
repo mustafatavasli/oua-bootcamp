@@ -14,7 +14,7 @@ class IntroScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('images/ıntroscreen.png'), // Replace with your image asset
+            Image.asset('assets/images/ıntroscreen.png'), // Replace with your image asset
             SizedBox(height: 20),
             Container(
               margin: EdgeInsets.only(right: 70),
