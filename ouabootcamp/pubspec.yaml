@@ -66,6 +66,11 @@ flutter:
     - assets/images/loginimage.png
     - assets/images/signup.png
     - assets/images/google.png
+    - assets/images/yakinlarim.png
+    - assets/images/kisikonu.png
+    - assets/images/alerji.png
+    - assets/images/Alerjiler.png
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -90,6 +95,11 @@ flutter:
         - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+    - family: DM Sans
+      fonts:
+        - asset: assets/fonts/DMSans-Bold.ttf  
+        - asset: assets/fonts/DMSans-Regular.ttf
+  
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

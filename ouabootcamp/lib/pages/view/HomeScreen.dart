@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ouabootcamp/pages/view/YakinlarimScreen.dart';
+import 'package:ouabootcamp/pages/view/AlerjilerScreen.dart'; // Import AlerjilerScreen
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -23,9 +25,27 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                ServiceIcon(icon: Icons.info, label: 'Bilgiler'),
+                ServiceIcon(
+                  icon: Icons.info,
+                  label: 'Bilgiler',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AlerjilerScreen()),
+                    );
+                  },
+                ),
                 ServiceIcon(icon: Icons.history, label: 'Geçmiş'),
-                ServiceIcon(icon: Icons.people, label: 'Aile'),
+                ServiceIcon(
+                  icon: Icons.people,
+                  label: 'Aile',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => YakinlarimScreen()),
+                    );
+                  },
+                ),
               ],
             ),
             SizedBox(height: 20),
@@ -42,17 +62,21 @@ class HomeScreen extends StatelessWidget {
 class ServiceIcon extends StatelessWidget {
   final IconData icon;
   final String label;
+  final VoidCallback? onTap; // onTap işlevini ekleyin
 
-  ServiceIcon({required this.icon, required this.label});
+  ServiceIcon({required this.icon, required this.label, this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Icon(icon, size: 40),
-        SizedBox(height: 10),
-        Text(label),
-      ],
+    return GestureDetector(
+      onTap: onTap, // GestureDetector ile onTap'i tanımlayın
+      child: Column(
+        children: <Widget>[
+          Icon(icon, size: 40),
+          SizedBox(height: 10),
+          Text(label),
+        ],
+      ),
     );
   }
 }
