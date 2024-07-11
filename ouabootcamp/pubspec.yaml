@@ -61,16 +61,18 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/logo.jpeg
+    - assets/images/Logo.png
     - assets/images/ıntroscreen.png
     - assets/images/loginimage.png
     - assets/images/signup.png
-    - assets/images/google.png
+    - assets/images/ilac.png
+    - assets/images/Group.png
+    - assets/images/hastaliklar.png
+    - assets/images/Alerjiler.png
     - assets/images/yakinlarim.png
+    - assets/images/hemsire.png
     - assets/images/kisikonu.png
     - assets/images/alerji.png
-    - assets/images/Alerjiler.png
-    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -95,11 +97,6 @@ flutter:
         - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-    - family: DM Sans
-      fonts:
-        - asset: assets/fonts/DMSans-Bold.ttf  
-        - asset: assets/fonts/DMSans-Regular.ttf
-  
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
