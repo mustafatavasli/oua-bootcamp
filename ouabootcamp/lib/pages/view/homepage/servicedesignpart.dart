@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ouabootcamp/pages/view/AlerjilerScreen.dart';
+import 'package:ouabootcamp/pages/view/YakinlarimScreen.dart';
 
 class ServicesDesign extends StatelessWidget {
   const ServicesDesign({
@@ -45,7 +47,12 @@ class ServicesDesign extends StatelessWidget {
                   border: Border.all(width: 1, color: Color.fromRGBO(140, 43, 102,1))),
               child: IconButton(
                 icon: Image.asset('assets/images/Alerjiler.png',height: 60,),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AlerjilerScreen()),
+                  );
+                },
               ),
             ),
           ],
@@ -58,7 +65,12 @@ class ServicesDesign extends StatelessWidget {
                   border: Border.all(width: 1, color: Colors.red)),
               child: IconButton(
                 icon: Image.asset('assets/images/yakinlarim.png',height: 60,),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => YakinlarimScreen()),
+                  );
+                },
               ),
             ),
           ],

@@ -70,7 +70,7 @@ class CardExampleBottom extends StatelessWidget {
 
         Expanded(
           flex: 1,
-            child: IconButton(onPressed: () {}, icon: Icon(Icons.menu))),
+            child: IconButton(onPressed: () {}, icon: Icon(Icons.close))),
         SizedBox(height: 10,)
       ],
     );
