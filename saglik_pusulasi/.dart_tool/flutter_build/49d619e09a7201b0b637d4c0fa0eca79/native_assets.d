@@ -1,0 +1,1 @@
+ /Users/selinayceylan/oua-bootcamp-1/saglik_pusulasi/.dart_tool/flutter_build/49d619e09a7201b0b637d4c0fa0eca79/native_assets.yaml: 
