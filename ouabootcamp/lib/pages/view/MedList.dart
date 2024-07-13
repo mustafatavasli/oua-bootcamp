@@ -1,34 +1,36 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ouabootcamp/pages/view/MedAdd.dart';
-import 'package:ouabootcamp/pages/view/YakinlarimEkleScreen.dart';
+import 'MedAdd.dart'; // Ensure this import is correct
+import 'homepage/cardsdesignbottom.dart'; // Ensure this import is correct
 
 class MedList extends StatefulWidget {
   @override
   _MedListState createState() => _MedListState();
+
 }
 
 class _MedListState extends State<MedList> {
-  List<String> names = []; // Start with an empty list
+  List<Map<String, String>> medications = []; // Start with an empty list
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(''), // Remove the text from the AppBar
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.only(right: 8.0),
             child: IconButton(
-              icon: Icon(Icons.add),
+              icon: const Icon(Icons.add),
               iconSize: 30,
               onPressed: () async {
-                final newName = await Navigator.push(
+                final newMedication = await Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => MedAdd()),
                 );
-                if (newName != null) {
+                if (newMedication != null && newMedication is Map<String, String>) {
                   setState(() {
-                    names.add(newName);
+                    medications.add(newMedication);
                   });
                 }
               },
@@ -42,12 +44,12 @@ class _MedListState extends State<MedList> {
           children: <Widget>[
             SizedBox(height: 25),
             Padding(
-              padding: const EdgeInsets.only(left: 40.0),
+              padding: const EdgeInsets.only(left: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Yakınlarım',
+                    'İlaç Hatırlatıcı',
                     style: TextStyle(
                       fontFamily: 'DM Sans',
                       fontWeight: FontWeight.bold,
@@ -59,7 +61,7 @@ class _MedListState extends State<MedList> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image.asset(
-                        'assets/images/yakinlarim.png',
+                        'assets/images/ilac.png',
                         width: 38,
                         height: 36,
                       ),
@@ -68,7 +70,7 @@ class _MedListState extends State<MedList> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Acil anlarda hızlı bağlantı. Sevdikleriniz \nhep yanınızda!',
+                            'Daha sağlıklı günler için doğru zaman,\ndoğru ilaç',
                             style: TextStyle(
                               fontFamily: 'DM Sans',
                               fontSize: 14,
@@ -79,11 +81,39 @@ class _MedListState extends State<MedList> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 40),
-                  Wrap(
-                    spacing: 15,
-                    runSpacing: 10,
-                    children: names.map((name) => _buildSquare(context, name)).toList(),
+                  SizedBox(height: 25),
+                  Column(
+                    children: medications.map((medication) {
+                      return Column(
+                        children: [
+                          Row(
+                            children:[
+                              Expanded(
+                                flex:6,
+                                child: CardExampleBottom(
+                                  date: medication['date']!,
+                                  time: medication['time']!,
+                                  name: medication['name']!,
+                                  reason: medication['reason']!,
+                                ),
+                              ),
+                              Expanded(
+                                child: IconButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      medications.remove(medication);
+                                    });
+                                  },
+                                  icon: Icon(Icons.close),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 10),
+                        ],
+                      );
+                    }).toList(),
+
                   ),
                 ],
               ),
@@ -99,63 +129,6 @@ class _MedListState extends State<MedList> {
     );
   }
 
-  Widget _buildSquare(BuildContext context, String name) {
-    return Stack(
-      children: [
-        InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => YakinlarimEkleScreen()),
-            );
-          },
-          child: Container(
-            margin: EdgeInsets.only(left: 5, bottom: 20),
-            width: 144,
-            height: 120,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 243, 198, 213),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Positioned(
-                  top: 25,
-                  child: Image.asset(
-                    'assets/images/kisikonu.png',
-                    width: 56,
-                    height: 56,
-                  ),
-                ),
-                Positioned(
-                  bottom: 10,
-                  child: Text(
-                    name,
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontSize: 14,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        Positioned(
-          top: 0,
-          right: 0,
-          child: IconButton(
-            icon: Icon(Icons.close, color: const Color.fromARGB(255, 0, 0, 0)),
-            onPressed: () {
-              setState(() {
-                names.remove(name);
-              });
-            },
-          ),
-        ),
-      ],
-    );
-  }
 }
+
+

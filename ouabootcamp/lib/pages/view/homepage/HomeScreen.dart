@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20),
               Text('Yaklaşan Hatırlatıcılar', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
-              CardExampleBottom(),
+
             ],
           ),
         ),

@@ -2,16 +2,25 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+
 class CardExampleBottom extends StatelessWidget {
-  const CardExampleBottom({super.key});
+  final String date;
+  final String time;
+  final String name;
+  final String reason;
+
+
+  const CardExampleBottom({
+    super.key,
+    required this.date,
+    required this.time,
+    required this.name,
+    required this.reason,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          flex: 8,
-          child: Card(
+    return Card(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
             color: Color.fromRGBO(251, 236, 241, 1),
             child: Row(
@@ -20,7 +29,7 @@ class CardExampleBottom extends StatelessWidget {
                   flex: 2,
                   child: Container(
                     padding: EdgeInsets.all(8.0),
-                    child: const Card(
+                    child: Card(
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
                       color: Color.fromRGBO(247, 219, 228, 1),
                       child: Column(
@@ -28,18 +37,21 @@ class CardExampleBottom extends StatelessWidget {
                         children: <Widget>[
                           ListTile(
                             title: Text(
-                              '12 Pzt',
+                              date,
                               textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
-                            subtitle: Text('11.10',textAlign: TextAlign.center,),
+                            subtitle: Text(
+                              time,
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ],
                       ),
                     ),
                   ),
                 ),
-                const Expanded(
+                Expanded(
                   flex: 3,
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
@@ -48,7 +60,7 @@ class CardExampleBottom extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Parol',
+                          name,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
@@ -56,7 +68,7 @@ class CardExampleBottom extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Ağrı Kesici',
+                          reason,
                           style: TextStyle(fontSize: 13),
                         ),
                       ],
@@ -65,14 +77,7 @@ class CardExampleBottom extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-        ),
-
-        Expanded(
-          flex: 1,
-            child: IconButton(onPressed: () {}, icon: Icon(Icons.close))),
-        SizedBox(height: 10,)
-      ],
     );
+    
   }
 }

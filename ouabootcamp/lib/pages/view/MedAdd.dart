@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
+
 
 class MedAdd extends StatefulWidget {
   @override
@@ -7,7 +10,7 @@ class MedAdd extends StatefulWidget {
 }
 
 class _MedAddState extends State<MedAdd> {
-  final TextEditingController _dateController = TextEditingController();
+  late final TextEditingController _dateController = TextEditingController();
 
   final TextEditingController _timeController = TextEditingController();
 
@@ -16,6 +19,7 @@ class _MedAddState extends State<MedAdd> {
   final TextEditingController _reasonController = TextEditingController();
 
   DateTime selectedDate = DateTime.now();
+
   final DateFormat formatter = DateFormat('dd-MM-yyyy');
   TimeOfDay selectedTime = TimeOfDay.now();
 
@@ -29,10 +33,12 @@ class _MedAddState extends State<MedAdd> {
     if (picked != null && picked != selectedDate) {
       setState(() {
         selectedDate = picked;
-        _dateController.text = formatter.format(picked);
+        initializeDateFormatting('tr-TR', '')
+            .then((_) => (_dateController.text = DateFormat.yMd('tr-TR').format(selectedDate)));
       });
     }
   }
+
 
 
   @override
@@ -202,11 +208,12 @@ class _MedAddState extends State<MedAdd> {
                               _timeController.text.isNotEmpty &&
                               _nameController.text.isNotEmpty &&
                               _reasonController.text.isNotEmpty) {
+
                             Map<String, String> yakinData = {
-                              'ad': _dateController.text,
-                              'soyad': _timeController.text,
-                              'telefon': _nameController.text,
-                              'yakinlik': _reasonController.text,
+                              'date': DateFormat.MMMEd('tr-TR').format(selectedDate),
+                              'time': _timeController.text,
+                              'name': _nameController.text,
+                              'reason': _reasonController.text,
                             };
                             Navigator.pop(context, yakinData);
                           }
