@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:ouabootcamp/pages/view/homepage/cardsdesignbottom.dart';
 import 'package:ouabootcamp/pages/view/homepage/cardsdesignmid.dart';
 import 'package:ouabootcamp/pages/view/homepage/servicedesignpart.dart';
+import '../MedList.dart';
 import 'cardsdesigntop.dart';
 
 
 class HomeScreen extends StatelessWidget {
+
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -36,7 +39,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20),
               Text('Yaklaşan Hatırlatıcılar', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
-              CardExampleBottom(),
+
             ],
           ),
         ),
