@@ -7,7 +7,7 @@ class AlerjilerScreen extends StatefulWidget {
 }
 
 class _AlerjilerScreenState extends State<AlerjilerScreen> {
-  List<String> names = []; // Start with an empty list
+  List<Map<String, String>> alerjiler = []; // Start with an empty list
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +21,13 @@ class _AlerjilerScreenState extends State<AlerjilerScreen> {
               icon: Icon(Icons.add),
               iconSize: 30,
               onPressed: () async {
-                final newName = await Navigator.push(
+                final yeniAlerji = await Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => AlerjilerEkleScreen()),
                 );
-                if (newName != null) {
+                if (yeniAlerji != null && yeniAlerji is Map<String, String>) {
                   setState(() {
-                    names.add(newName);
+                    alerjiler.add(yeniAlerji);
                   });
                 }
               },
@@ -82,7 +82,7 @@ class _AlerjilerScreenState extends State<AlerjilerScreen> {
                   Wrap(
                     spacing: 15,
                     runSpacing: 10,
-                    children: names.map((name) => _buildSquare(context, name)).toList(),
+                    children: alerjiler.map((alerji) => _buildSquare(context, alerji['ad']!)).toList(),
                   ),
                 ],
               ),
@@ -149,7 +149,7 @@ class _AlerjilerScreenState extends State<AlerjilerScreen> {
             icon: Icon(Icons.close, color: const Color.fromARGB(255, 0, 0, 0)),
             onPressed: () {
               setState(() {
-                names.remove(name);
+                alerjiler.removeWhere((alerji) => alerji['ad'] == name);
               });
             },
           ),

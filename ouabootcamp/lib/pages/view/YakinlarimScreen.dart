@@ -7,7 +7,7 @@ class YakinlarimScreen extends StatefulWidget {
 }
 
 class _YakinlarimScreenState extends State<YakinlarimScreen> {
-  List<String> names = []; // Start with an empty list
+  List<Map<String, String>> yakinlar = []; // Start with an empty list
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +21,13 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
               icon: Icon(Icons.add),
               iconSize: 30,
               onPressed: () async {
-                final newName = await Navigator.push(
+                final yeniYakin = await Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => YakinlarimEkleScreen()),
                 );
-                if (newName != null) {
+                if (yeniYakin != null && yeniYakin is Map<String, String>) {
                   setState(() {
-                    names.add(newName);
+                    yakinlar.add(yeniYakin);
                   });
                 }
               },
@@ -82,7 +82,7 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
                   Wrap(
                     spacing: 15,
                     runSpacing: 10,
-                    children: names.map((name) => _buildSquare(context, name)).toList(),
+                    children: yakinlar.map((yakin) => _buildSquare(context, yakin['ad']!)).toList(),
                   ),
                 ],
               ),
@@ -149,7 +149,7 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
             icon: Icon(Icons.close, color: const Color.fromARGB(255, 0, 0, 0)),
             onPressed: () {
               setState(() {
-                names.remove(name);
+                yakinlar.removeWhere((yakin) => yakin['ad'] == name);
               });
             },
           ),
