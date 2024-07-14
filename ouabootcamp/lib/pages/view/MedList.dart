@@ -2,16 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'MedAdd.dart'; // Ensure this import is correct
 import 'homepage/cardsdesignbottom.dart'; // Ensure this import is correct
+import 'package:intl/intl.dart';
 
 class MedList extends StatefulWidget {
   @override
   _MedListState createState() => _MedListState();
 
+
 }
 
 class _MedListState extends State<MedList> {
   List<Map<String, String>> medications = []; // Start with an empty list
-
 
   @override
   Widget build(BuildContext context) {
@@ -87,9 +88,9 @@ class _MedListState extends State<MedList> {
                       return Column(
                         children: [
                           Row(
-                            children:[
+                            children: [
                               Expanded(
-                                flex:6,
+                                flex: 6,
                                 child: CardExampleBottom(
                                   date: medication['date']!,
                                   time: medication['time']!,
@@ -113,7 +114,6 @@ class _MedListState extends State<MedList> {
                         ],
                       );
                     }).toList(),
-
                   ),
                 ],
               ),
@@ -128,7 +128,4 @@ class _MedListState extends State<MedList> {
       ),
     );
   }
-
 }
-
-
