@@ -75,6 +75,9 @@ flutter:
     - assets/images/hemsire.png
     - assets/images/kisikonu.png
     - assets/images/alerji.png
+    - assets/images/navgemini.png
+    - assets/images/navhome.png
+    - assets/images/navprofile.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
