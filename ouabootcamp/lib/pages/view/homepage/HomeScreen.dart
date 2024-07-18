@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ouabootcamp/pages/view/IntroScreen.dart';
+import 'package:ouabootcamp/pages/view/ProfileScreen.dart';
 import 'package:ouabootcamp/pages/view/homepage/cardsdesignmid.dart';
 import 'package:ouabootcamp/pages/view/homepage/servicedesignpart.dart';
 import '../MedList.dart';

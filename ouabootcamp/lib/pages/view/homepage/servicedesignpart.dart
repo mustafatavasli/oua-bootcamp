@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ouabootcamp/pages/view/AlerjilerScreen.dart';
+import 'package:ouabootcamp/pages/view/HastaliklarEkrani.dart';
 import 'package:ouabootcamp/pages/view/MedList.dart';
 import 'package:ouabootcamp/pages/view/YakinlarimScreen.dart';
 
@@ -40,7 +41,12 @@ class ServicesDesign extends StatelessWidget {
                   border: Border.all(width: 1, color: Color.fromRGBO(100, 162, 175,1))),
               child: IconButton(
                 icon: Image.asset('assets/images/hastaliklar.png',height: 60,),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HastaliklarEkrani()),
+                  );
+                },
               ),
             ),
           ],
