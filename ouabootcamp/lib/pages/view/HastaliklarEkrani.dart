@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ouabootcamp/pages/view/AlerjilerEkleScreen.dart';
+import 'package:ouabootcamp/pages/view/HastalikEkle.dart';
 
 class HastaliklarEkrani extends StatefulWidget {
   @override
@@ -23,7 +24,7 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
               onPressed: () async {
                 final yeniAlerji = await Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AlerjilerEkleScreen()),
+                  MaterialPageRoute(builder: (context) => HastalikEkle()),
                 );
                 if (yeniAlerji != null && yeniAlerji is Map<String, String>) {
                   setState(() {
@@ -113,7 +114,7 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
             width: 144,
             height: 120,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 243, 198, 213),
+              color: Color.fromARGB(55, 6, 206, 255),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Stack(
@@ -122,7 +123,7 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
                 Positioned(
                   top: 25,
                   child: Image.asset(
-                    'assets/images/alerji.png',
+                    'assets/images/hastaliklarcard.png',
                     width: 56,
                     height: 56,
                   ),

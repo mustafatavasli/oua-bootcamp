@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class profilePage extends StatelessWidget {
   const profilePage({super.key});
@@ -7,35 +9,47 @@ class profilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profil'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 40,
-              backgroundImage: AssetImage('images/profile.png'), // Update with actual path
+              radius:80,
+              backgroundColor: Color.fromRGBO(251, 236, 241,1),
+              backgroundImage:AssetImage("assets/images/Logo.png")
             ),
-            SizedBox(height: 8),
-            TextButton(
-              onPressed: () {},
-              child: Text('Edit profile image', style: TextStyle(color: Colors.blue)),
+            SizedBox(height: 50),
+            Card(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+              color: Color.fromRGBO(251, 236, 241,1),
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      title: Text('Ad',style: TextStyle(fontWeight: FontWeight.bold,letterSpacing: 0.5,),),
+                      subtitle: Text('Muhammed Yiğit Özgül'),
+                      trailing: Icon(Icons.person),
+                    ),
+                    SizedBox(height: 10),
+                    ListTile(
+                      title: Text('Userme',style: TextStyle(fontWeight: FontWeight.bold,letterSpacing: 0.5,)),
+                      subtitle: Text('@yigit14'),
+                      trailing: Icon(Icons.supervised_user_circle_outlined),
+                    ),
+                    SizedBox(height: 10),
+                    ListTile(
+                      title: Text('Email',style: TextStyle(fontWeight: FontWeight.bold,letterSpacing: 0.5,)),
+                      subtitle: Text('akademi@hotmail.com'),
+                      trailing: Icon(Icons.mail),
+                    ),
+                  ],
+                ),
+              ),
             ),
-            ListTile(
-              title: Text('Name'),
-              subtitle: Text('Yigit Ozgul'),
-            ),
-            ListTile(
-              title: Text('Userme'),
-              subtitle: Text('@yigitt14'),
-            ),
-            ListTile(
-              title: Text('Email'),
-              subtitle: Text('akademi@hotmail.com'),
-            ),
-
           ],
         ),
       ),
