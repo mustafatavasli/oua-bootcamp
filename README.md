@@ -135,10 +135,9 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 <summary><h1>Sprint 2</h1></summary>
   <h3>Sprint Notları</h3>
    ### Tahmin Edilen Tamamlanacak Puan
-  350 Puan ### Tahmin Edilen Tamamlanacak Puan
-  350 Puan
+  350 Puan 
   ### Tahmin Mantığı
-  Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde kinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
+  Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
 </details>
 
 
