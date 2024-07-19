@@ -133,11 +133,16 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 </details>
 <details>
 <summary><h1>Sprint 2</h1></summary>
+  
   <h3>Sprint Notları</h3>
+  <ul>
+  </ul>
    ### Tahmin Edilen Tamamlanacak Puan
   350 Puan 
   ### Tahmin Mantığı
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
+  ### Daily Scrum
+  Verimli olması adına görüşmelerimiz Discord ve WhatsApp üzerinden devam etti ve süreci daha hızlı, kolay ilerletmemizi sağladı.
   <h3>Sprint Review</h3>
   <ul>
 UI Geliştirmeleri: Sayfalarımızın UI kısımlarını tamamladık.
