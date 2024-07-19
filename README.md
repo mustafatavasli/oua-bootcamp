@@ -138,6 +138,11 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   350 Puan 
   ### Tahmin Mantığı
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
+  <h3>Sprint Review</h3>
+ UI Geliştirmeleri: Sayfalarımızın UI kısımlarını tamamladık.
+Backend ve API İşlemleri: Backend ve API işlemlerinde önemli ilerlemeler kaydedildi. Takım olarak belirlenen hedeflere ulaşmak için uyum içinde çalıştık.
+Firebase Başlangıcı: Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.
+Verimli Çalışma: Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.
 </details>
 
 
