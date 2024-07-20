@@ -151,7 +151,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   
   ### Daily Scrum
   Verimli olması adına görüşmelere Discord ve WhatsApp üzerinden devam edildi ve sürecin daha hızlı yapılması sağlandı.
-  **Toplantı ve Whatshapp Notları :** https://imgur.com/a/o1e4AtU
+  **Toplantı ve Whatshapp Notları :** https://imgur.com/a/RQ7OwJW
   
  <details>
   <summary><h3>Screenshots</h3></summary>
