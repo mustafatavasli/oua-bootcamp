@@ -49,8 +49,8 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
      <li>Ürün için giriş sistemi olarak e-posta ve Google ile giriş yapılmaktadır.</li>
   </ul>
 
-  ### Tahmin Edilen Tamamlanacak Puan
-  350 Puan
+  ### Sprint İçinde Tahmin Edilen Tamamlanacak Puan
+  115 Puan
 
   ### Tahmin Mantığı
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk sprint için bitirilmesi gereken puan 115 olarak belirlenmiştir ve hedefe ulaşılmıştır.
@@ -140,8 +140,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
      <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
   
-  ### Tahmin Edilen Tamamlanacak Puan
-  350 Puan 
+  ### Sprint İçinde Tahmin Edilen Tamamlanacak Puan
+  100 Puan 
   
   ### Tahmin Mantığı
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
