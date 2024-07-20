@@ -160,6 +160,15 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
    </td>
   </tr>
 </table>
+
+ ### Hastalıklar Ekranları
+<table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Hastal%C4%B1klar%20Sekmesi%20(Completed).png?raw=true" alt="Screen 1 Screen" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Hastal%C4%B1k%20Ekleme%20Sekmesi%20(Completed).png?raw=true" alt="Screen 2" width="200"/></td>
+  </tr>
+</table>
+
   <h3>Sprint Review</h3>
   <ul>
     <li>Sayfaların UI kısımları tamamlandı.</li>
