@@ -145,7 +145,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
   ### Daily Scrum
   Verimli olması adına görüşmelerimiz Discord ve WhatsApp üzerinden devam etti ve süreci daha hızlı, kolay ilerletmemizi sağladı.
-  **Toplantı ve Whatshapp Notları :** https://imgur.com/a/nW0Hrv2
+  **Toplantı ve Whatshapp Notları :** https://imgur.com/a/o1e4AtU
   <h3>Sprint Review</h3>
   <ul>
 UI Geliştirmeleri: Sayfalarımızın UI kısımlarını tamamladık.
