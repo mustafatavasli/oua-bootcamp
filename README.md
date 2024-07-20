@@ -136,7 +136,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   
   <h3>Sprint Notları</h3>
   <ul>
-     <li>Backend geliştirmeleri tamamlandı.</li>
+     <li>Backend kısmı tamamlandı frontend kısmına devam ediliyor.</li>
      <li>Gemini API kullanılarak uygulamaya yapay zeka entegre edilmiştir.</li>
      <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
