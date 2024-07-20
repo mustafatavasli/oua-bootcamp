@@ -137,6 +137,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   <h3>Sprint Notları</h3>
   <ul>
      <li>Backend geliştirmeleri tamamlandı.</li>
+     <li>Gemini API kullanılarak uygulamaya yapay zeka entegre edilmiştir.</li>
      <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
   
@@ -173,7 +174,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   <h3>Sprint Review</h3>
   <ul>
     <li>Sayfaların UI kısımları tamamlandı.</li>
-    <li>Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>         
+    <li>Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
+    <li>Kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özellik, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olacak.</li>
     <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşildi ve herkesten teyit alınarak çalışıldı.</li>
     <li>Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
     <li>Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.</li>
