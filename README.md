@@ -153,6 +153,16 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   Verimli olması adına görüşmelere Discord ve WhatsApp üzerinden devam edildi ve sürecin daha hızlı yapılması sağlandı.
   **Toplantı ve Whatshapp Notları :** https://imgur.com/a/RQ7OwJW
   
+
+   <details>
+  <summary><h3>Sprint Board Updates</h3></summary>
+
+![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.31.31.png)
+
+![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.32.58.png)
+
+  </details>
+  
  <details>
   <summary><h3>Screenshots</h3></summary>
 
