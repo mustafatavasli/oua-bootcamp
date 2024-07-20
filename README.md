@@ -168,6 +168,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
     <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Hastal%C4%B1k%20Ekleme%20Sekmesi%20(Completed).png?raw=true" alt="Screen 2" width="200"/></td>
   </tr>
 </table>
+</details>
 
   <h3>Sprint Review</h3>
   <ul>
