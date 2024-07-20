@@ -136,6 +136,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   
   <h3>Sprint Notları</h3>
   <ul>
+     <li>Backend geliştirmeleri tamamlandı.</li>
+     <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
    ### Tahmin Edilen Tamamlanacak Puan
   350 Puan 
