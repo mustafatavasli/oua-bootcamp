@@ -189,7 +189,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   <ul>
     <li>Gelecek sprintte backend ve API işlemlerinin tamamlanmasına odaklanılacak.</li>
     <li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.</li>
-    <li>Görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak daha dengeli bir görev dağılımı yapılacak. Günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
+    <li>Flutter Health Package ve Firebase Push Notification entegrasyonları hakkında detaylı araştırmalar yapıldı. Bu araştırmalar, üçüncü sprintte yapılacak geliştirmeler için sağlam bir temel oluşturdu ve uygulamanın işlevselliğini artırma yolunda önemli adımlar atılacak.</li>
     <li>Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.</li>
     <li>Üçüncü sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
      </ul>
