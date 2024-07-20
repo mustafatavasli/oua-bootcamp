@@ -149,7 +149,17 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   ### Daily Scrum
   Verimli olması adına görüşmelere Discord ve WhatsApp üzerinden devam edildi ve sürecin daha hızlı yapılması sağlandı.
   **Toplantı ve Whatshapp Notları :** https://imgur.com/a/o1e4AtU
+  
+ <details>
+  <summary><h3>Screenshots</h3></summary>
 
+ ### Profil Sayfası
+  <table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Profile%20Screen.png?raw=true" alt="Profile Screen" width="200"/></td>
+   </td>
+  </tr>
+</table>
   <h3>Sprint Review</h3>
   <ul>
     <li>Sayfaların UI kısımları tamamlandı.</li>
