@@ -126,8 +126,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   <h3>Sprint Retroperspective</h3>
   <ul>
-    <li>İkinci sprint için backend ve API işlemlerinin yapılmasına karar verilmiştir.</li>
-    <li>Gelecek sprint'te görev dağılımını daha dengeli yapmak için görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak bir plan yapılacak. Ayrıca, günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
+    <li>İkinci sprint için Backend ve API işlemlerinin yapılmasına karar verilmiştir.</li>
+    <li>Gelecek Sprint'te görev dağılımını daha dengeli yapmak için görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak bir plan yapılacak. Ayrıca, günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
   </ul>
   
 </details>
@@ -136,7 +136,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   
   <h3>Sprint Notları</h3>
   <ul>
-     <li>Backend kısmı tamamlandı frontend kısmına devam ediliyor.</li>
+     <li>Frontend geliştirme tamamlandı Backend geliştirme devam ediliyor.</li>
      <li>Gemini API kullanılarak uygulamaya yapay zeka entegre edilmiştir.</li>
      <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
@@ -173,9 +173,9 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   <h3>Sprint Review</h3>
   <ul>
-    <li>Sayfaların UI kısımları tamamlandı.</li>
+    <li>Sayfaların UI tasarımları tamamlandı.</li>
     <li>Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
-    <li>Kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özellik, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olacak.</li>
+    <li>Kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özelliğin, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olması amaçlandı.</li>
     <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşildi ve herkesten teyit alınarak çalışıldı.</li>
     <li>Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
     <li>Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.</li>
