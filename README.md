@@ -176,12 +176,12 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   <h3>Sprint Review</h3>
   <ul>
     <li>Sayfaların UI tasarımları tamamlandı.</li>
-    <li>Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
-    <li>Kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özelliğin, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olması amaçlandı.</li>
-    <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşildi ve herkesten teyit alınarak çalışıldı.</li>
-    <li>Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
+    <li>Sena, Yiğit, Mustafa ve Selinay tarafından Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
+    <li>Mustafa tarafından kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özelliğin, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olması amaçlandı.</li>
+    <li>Yiğit tarafından Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
     <li>Flutter Health Package'in nasıl entegre edileceği detaylı bir şekilde araştırıldı. Bu araştırma, uygulamanın sağlık verilerini toplama ve analiz etme kabiliyetini geliştirmek için önemli bir adım oldu.</li>
     <li>Firebase kullanarak push bildirimlerinin nasıl uygulanacağı araştırıldı. Kullanıcı etkileşimini artırmak ve önemli bildirimleri zamanında iletmek için gerekli olan bilgi toplandı.</li>
+    <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşildi ve herkesten teyit alınarak çalışıldı.</li>
     <li>Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.</li>
    </ul>
    
