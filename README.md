@@ -147,24 +147,24 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
   
   ### Daily Scrum
-  Verimli olması adına görüşmelerimiz Discord ve WhatsApp üzerinden devam etti ve süreci daha hızlı, kolay ilerletmemizi sağladı.
+  Verimli olması adına görüşmelere Discord ve WhatsApp üzerinden devam edildi ve sürecin daha hızlı yapılması sağlandı.
   **Toplantı ve Whatshapp Notları :** https://imgur.com/a/o1e4AtU
 
   <h3>Sprint Review</h3>
   <ul>
-    <li>UI Geliştirmeleri: Sayfalarımızın UI kısımlarını tamamladık.</li>
-    <li>Backend ve API İşlemleri: Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>         
-    <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşerek ve birbirimizden teyit alarak çalıştık.</li>
-    <li>Firebase Başlangıcı: Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
-    <li>Verimli Çalışma: Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.</li>
+    <li>Sayfaların UI kısımları tamamlandı.</li>
+    <li>Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>         
+    <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşildi ve herkesten teyit alınarak çalışıldı.</li>
+    <li>Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
+    <li>Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.</li>
    </ul>
    
    <h3>Sprint Retroperspective</h3>
   <ul>
-    <li>Backend ve API İşlemleri: Gelecek sprintte backend ve API işlemlerinin tamamlanmasına odaklanılacak.</li>
-    <li>Firebase Entegrasyonu: Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.</li>
-    <li>Görev Dağılımı: Görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak daha dengeli bir görev dağılımı yapılacak. Günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
-    <li>Sürekli İletişim: Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.</li>
+    <li>Gelecek sprintte backend ve API işlemlerinin tamamlanmasına odaklanılacak.</li>
+    <li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.</li>
+    <li>Görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak daha dengeli bir görev dağılımı yapılacak. Günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
+    <li>Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.</li>
     <li>İkinci sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
      </ul>
 </details>
