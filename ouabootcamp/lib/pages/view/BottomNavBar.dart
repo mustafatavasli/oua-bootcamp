@@ -70,7 +70,7 @@ class _NavigationExampleState extends State<NavigationExample> {
         /// Home page
         HomeScreen(),
         /// Profile,
-        profilePage(),
+        ProfileScreen(),
       ][currentPageIndex],
     );
   }

@@ -18,10 +18,10 @@ class IntroScreen extends StatelessWidget {
             Image.asset('assets/images/ıntroscreen.png'), // Replace with your image asset
             SizedBox(height: 20),
             Container(
-              margin: EdgeInsets.only(right: 70),
+              margin: EdgeInsets.only(right: 90),
               child: Text(
                 'Sağlık Pusulası',
-                style: TextStyle(fontSize: 24,fontFamily: 'Cinzel'),
+                style: TextStyle(fontSize: 22,fontFamily: 'Cinzel'),
 
               ),
             ),
@@ -31,7 +31,7 @@ class IntroScreen extends StatelessWidget {
               margin: EdgeInsets.only(left: 32),
               child: Text(
                 'Anında bilgi, hızlı müdahale, sağlıklı yaşam.',
-                style: TextStyle(fontSize: 20,fontFamily: 'Montserrat',fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 16,fontFamily: 'Montserrat',fontWeight: FontWeight.bold),
                 textAlign: TextAlign.left,
 
               ),
