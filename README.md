@@ -138,6 +138,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   <ul>
      <li>Frontend geliştirme tamamlandı Backend geliştirme devam ediliyor.</li>
      <li>Gemini API kullanılarak uygulamaya yapay zeka entegre edilmiştir.</li>
+     <li>Flutter Healt Package'in nasıl entegre edileceği araştırılmıştır.</li>
+     <li>Firebase ile Push Notification kullanımı araştırılmıştır.</li>
      <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
   
@@ -187,7 +189,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
     <li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.</li>
     <li>Görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak daha dengeli bir görev dağılımı yapılacak. Günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
     <li>Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.</li>
-    <li>İkinci sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
+    <li>Üçüncü sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
      </ul>
 </details>
 
