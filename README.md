@@ -187,8 +187,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   <h3>Sprint Review</h3>
   <ul>
-    <li>Sayfaların UI tasarımları tamamlandı.</li>
-    <li>Sena, Yiğit, Mustafa ve Selinay tarafından Backend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
+    <li>Profil, hastalıklar ve hastalıklar ekle sayfalarının UI tasarımları tamamlandı.</li>
+    <li>Sena, Yiğit, Mustafa ve Selinay tarafından Frontend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
     <li>Mustafa tarafından kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özelliğin, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olması amaçlandı.</li>
     <li>Yiğit tarafından Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
     <li>Flutter Health Package'in nasıl entegre edileceği detaylı bir şekilde araştırıldı. Bu araştırma, uygulamanın sağlık verilerini toplama ve analiz etme kabiliyetini geliştirmek için önemli bir adım oldu.</li>
@@ -199,7 +199,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
    
    <h3>Sprint Retroperspective</h3>
   <ul>
-    <li>Gelecek sprintte backend ve API işlemlerinin tamamlanmasına odaklanılacak.</li>
+    <li>Gelecek sprintte Backend ve API işlemlerinin tamamlanmasına odaklanılacak.</li>
     <li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.</li>
     <li>Flutter Health Package ve Firebase Push Notification entegrasyonları hakkında detaylı araştırmalar yapıldı. Bu araştırmalar, üçüncü sprintte yapılacak geliştirmeler için sağlam bir temel oluşturdu ve uygulamanın işlevselliğini artırma yolunda önemli adımlar atılacak.</li>
     <li>Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.</li>
