@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188672168084",
+    "project_id": "ouabootcamp-fb5bc",
+    "storage_bucket": "ouabootcamp-fb5bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188672168084:android:8ddf10e4b420d2654de481",
+        "android_client_info": {
+          "package_name": "com.example.ouabootcamp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv8KZewDmP4ePfwg42AwFmmwwtUo_aioA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
