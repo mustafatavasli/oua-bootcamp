@@ -49,8 +49,8 @@ Sağlık Pusulası'nda misafir ve kullanıcı olarak iki tür giriş yapılabilm
      <li>Ürün için giriş sistemi olarak e-posta ve Google ile giriş yapılmaktadır.</li>
   </ul>
 
-  ### Tahmin Edilen Tamamlanacak Puan
-  350 Puan
+  ### Sprint İçinde Tahmin Edilen Tamamlanacak Puan
+  115 Puan
 
   ### Tahmin Mantığı
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk sprint için bitirilmesi gereken puan 115 olarak belirlenmiştir ve hedefe ulaşılmıştır.
@@ -126,8 +126,8 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   <h3>Sprint Retroperspective</h3>
   <ul>
-    <li>İkinci sprint için backend ve API işlemlerinin yapılmasına karar verilmiştir.</li>
-    <li>Gelecek sprint'te görev dağılımını daha dengeli yapmak için görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak bir plan yapılacak. Ayrıca, günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
+    <li>İkinci sprint için Backend ve API işlemlerinin yapılmasına karar verilmiştir.</li>
+    <li>Gelecek Sprint'te görev dağılımını daha dengeli yapmak için görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak bir plan yapılacak. Ayrıca, günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.</li>
   </ul>
   
 </details>
@@ -136,29 +136,78 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   
   <h3>Sprint Notları</h3>
   <ul>
+     <li>Frontend geliştirme tamamlandı Backend geliştirme devam ediliyor.</li>
+     <li>Gemini API kullanılarak uygulamaya yapay zeka entegre edildi.</li>
+     <li>Flutter Healt Package'in nasıl entegre edileceği araştırıldı.</li>
+     <li>Firebase ile Push Notification kullanımı araştırıldı.</li>
+     <li>Android Studio ve Visual Studio ile mobil uygulama entegrasyonları gerçekleştirildi.</li>
   </ul>
-   ### Tahmin Edilen Tamamlanacak Puan
-  350 Puan 
+  
+  ### Sprint İçinde Tahmin Edilen Tamamlanacak Puan
+  100 Puan 
+  
   ### Tahmin Mantığı
   Proje boyunca tamamlanması gereken backlog puanı 350'dir. Sprint’lere bölündüğünde ikinci sprint için bitirilmesi gereken puan 100 olarak belirlenmiştir.
+  
   ### Daily Scrum
-  Verimli olması adına görüşmelerimiz Discord ve WhatsApp üzerinden devam etti ve süreci daha hızlı, kolay ilerletmemizi sağladı.
+  Verimli olması adına görüşmelere Discord ve WhatsApp üzerinden devam edildi ve sürecin daha hızlı yapılması sağlandı.
+  **Toplantı ve Whatshapp Notları :** https://imgur.com/a/RQ7OwJW
+  
+
+   <details>
+  <summary><h3>Sprint Board Updates</h3></summary>
+
+  [Sprint 2 F82 Product Backlog URL](https://trello.com/invite/b/669bddd8e7a219bd2ed8624a/ATTI0f6d27bd27a06470252a4af06a2b43a16A4D7307/saglik-pusulasi-f82-sprint-2)
+
+![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.42.40.png)
+
+![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.40.44.png)
+
+  </details>
+  
+ <details>
+  <summary><h3>Screenshots</h3></summary>
+
+ ### Profil Sayfası
+  <table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Profile%20Screen.png?raw=true" alt="Profile Screen" width="200"/></td>
+   </td>
+  </tr>
+</table>
+
+ ### Hastalıklar Ekranları
+<table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Hastal%C4%B1klar%20Sekmesi%20(Completed).png?raw=true" alt="Screen 1 Screen" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/Hastal%C4%B1k%20Ekleme%20Sekmesi%20(Completed).png?raw=true" alt="Screen 2" width="200"/></td>
+  </tr>
+</table>
+</details>
+
   <h3>Sprint Review</h3>
   <ul>
-UI Geliştirmeleri: Sayfalarımızın UI kısımlarını tamamladık.
-Backend ve API İşlemleri: Backend ve API işlemlerinde önemli ilerlemeler kaydedildi. Takım olarak belirlenen hedeflere ulaşmak için haberleşerek ve birbirimizden teyit alarak çalıştık.
-Firebase Başlangıcı: Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.
-Verimli Çalışma: Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.
+    <li>Profil, hastalıklar ve hastalıklar ekle sayfalarının UI tasarımları tamamlandı.</li>
+    <li>Sena, Yiğit, Mustafa ve Selinay tarafından Frontend ve API işlemlerinde önemli ilerlemeler kaydedildi.</li>   
+    <li>Mustafa tarafından kart sayfalarında Gemini API kullanarak hem kayıtlı kullanıcıların hem de misafir girişi ile giriş yapan kullanıcıların hastalıklar hakkında merak ettikleri bilgilere ulaşmalarını sağlandı. Bu özelliğin, kullanıcıların sağlıklı ve bilinçli kararlar verebilmelerine yardımcı olması amaçlandı.</li>
+    <li>Yiğit tarafından Firebase kısmına başlanarak veritabanı entegrasyonuna yönelik ilk adımlar atıldı.</li>
+    <li>Flutter Health Package'in nasıl entegre edileceği detaylı bir şekilde araştırıldı. Bu araştırma, uygulamanın sağlık verilerini toplama ve analiz etme kabiliyetini geliştirmek için önemli bir adım oldu.</li>
+    <li>Firebase kullanarak push bildirimlerinin nasıl uygulanacağı araştırıldı. Kullanıcı etkileşimini artırmak ve önemli bildirimleri zamanında iletmek için gerekli olan bilgi toplandı.</li>
+    <li>Takım olarak belirlenen hedeflere ulaşmak için haberleşildi ve herkesten teyit alınarak çalışıldı.</li>
+    <li>Sprint süreci verimli ve başarılı geçti. Takım üyeleri, uyum içinde çalışarak belirlenen hedeflere zamanında ve eksiksiz ulaştı.</li>
    </ul>
+   
    <h3>Sprint Retroperspective</h3>
   <ul>
-Backend ve API İşlemleri: Gelecek sprintte backend ve API işlemlerinin tamamlanmasına odaklanılacak.
-Firebase Entegrasyonu: Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.
-Görev Dağılımı: Görevlerin karmaşıklığı ve zaman gereksinimleri dikkate alınarak daha dengeli bir görev dağılımı yapılacak. Günlük scrum toplantılarında görev durumu sıkı bir şekilde takip edilecek.
-Sürekli İletişim: Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.
-İkinci sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.
+    <li>Gelecek sprintte Backend ve API işlemlerinin tamamlanmasına odaklanılacak.</li>
+    <li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması planlanacak.</li>
+    <li>Flutter Health Package ve Firebase Push Notification entegrasyonları hakkında detaylı araştırmalar yapıldı. Bu araştırmalar, üçüncü sprintte yapılacak geliştirmeler için sağlam bir temel oluşturdu ve uygulamanın işlevselliğini artırma yolunda önemli adımlar atılacak.</li>
+    <li>Takım üyeleri arasında sürekli iletişimin ve geri bildirim alışverişinin sürdürülmesi, iş birliğinin artırılması hedeflenecek.</li>
+    <li>Üçüncü sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
      </ul>
 </details>
+
+
 
 
   
