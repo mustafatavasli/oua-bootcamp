@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ouabootcamp/pages/view/BottomNavBar.dart';
-import 'package:ouabootcamp/pages/view/homepage/HomeScreen.dart';
 import 'package:ouabootcamp/pages/view/LoginScreen.dart';
 import 'package:ouabootcamp/pages/view/SignUpScreen.dart';
 

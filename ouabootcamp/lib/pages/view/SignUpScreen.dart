@@ -1,21 +1,66 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'LoginScreen.dart';
 
-void main() {
-  runApp(MyApp());
+
+
+class SignUpScreen extends StatefulWidget {
+  @override
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class MyApp extends StatelessWidget {
+class _SignUpScreenState extends State<SignUpScreen> {
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
+  TextEditingController _nameController = TextEditingController();
+  TextEditingController _surnameController = TextEditingController();
+
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SignUpScreen(),
+  void dispose(){
+    _emailController.dispose();
+    _passwordController.dispose();
+    _nameController.dispose();
+    _surnameController.dispose();
+    super.dispose();
+  }
+
+  //auth
+
+  Future SignUp() async {
+    try{
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+      );
+      addUserDetails(_nameController.text.trim(),_surnameController.text.trim());
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Kayıt Başarıyla Oluşturuldu.')),
+      );
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => LoginScreen()),
+      );
+    }
+    catch(e){
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Kayıt başarısız.')),
+      );
+    }
+  }
+
+  //userinfo
+  Future addUserDetails(String firstName,String LastName) async{
+    await FirebaseFirestore.instance.collection('userData').add(
+      {
+        'firstName': firstName,
+        'LastName': LastName,
+      }
     );
   }
-}
 
-class SignUpScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,28 +74,34 @@ class SignUpScreen extends StatelessWidget {
               // Add your logo or illustration here
               Image.asset('assets/images/signup.png'),
               TextField(
+                controller: _nameController,
                 decoration: InputDecoration(
                   labelText: 'Ad',
                   suffixIcon: Icon(Icons.person),
                 ),
+
               ),
               TextField(
+                controller: _surnameController,
                 decoration: InputDecoration(
                   labelText: 'Soyad',
                   suffixIcon: Icon(Icons.person),
                 ),
               ),
               TextField(
+                controller: _emailController,
                 decoration: InputDecoration(
                   labelText: 'Email Adresi',
                   suffixIcon: Icon(Icons.email),
                 ),
               ),
               TextField(
+                controller: _passwordController,
                 decoration: InputDecoration(
                   labelText: 'Şifre',
                   suffixIcon: Icon(Icons.lock),
                 ),
+                obscureText: true,
               ),
               SizedBox(height: 20),
               ElevatedButton(
@@ -58,8 +109,10 @@ class SignUpScreen extends StatelessWidget {
                     backgroundColor: Color.fromRGBO(53, 58, 72, 1),
                     minimumSize: Size(400, 50)
                 ),
-                onPressed: () {},
-                child: Text('Giriş Yap',style: TextStyle(color: Colors.white),),
+                onPressed: () {
+                  SignUp();
+                },
+                child: Text('Kayıt Ol',style: TextStyle(color: Colors.white),),
               ),
               SizedBox(height: 10),
               ElevatedButton.icon(
@@ -78,4 +131,5 @@ class SignUpScreen extends StatelessWidget {
     );
   }
 }
+
 

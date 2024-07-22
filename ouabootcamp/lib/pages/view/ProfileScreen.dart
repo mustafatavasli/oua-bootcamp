@@ -9,6 +9,7 @@ class profilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
       ),
       body: const Padding(
         padding: EdgeInsets.all(16.0),

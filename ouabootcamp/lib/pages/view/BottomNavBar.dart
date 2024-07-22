@@ -19,59 +19,61 @@ class _NavigationExampleState extends State<NavigationExample> {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    return Scaffold(
-
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: Container(
-        width: 90,
-        height: 90,
-        margin: EdgeInsets.only(top: 10),
-        child: FloatingActionButton(
-          backgroundColor: Color.fromRGBO(251, 236, 241,1),
-          elevation: 0,
-          onPressed: () {
-
-          },
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(100),
-          ),
-          child: Image.asset(
-              "assets/images/navgemini.png",
-            fit: BoxFit.fill,
-            width: 80,
+    return WillPopScope(
+      onWillPop: () async => false ,
+      child: Scaffold(
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: Container(
+          width: 90,
+          height: 90,
+          margin: EdgeInsets.only(top: 10),
+          child: FloatingActionButton(
+            backgroundColor: Color.fromRGBO(251, 236, 241,1),
+            elevation: 0,
+            onPressed: () {
+      
+            },
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(100),
+            ),
+            child: Image.asset(
+                "assets/images/navgemini.png",
+              fit: BoxFit.fill,
+              width: 80,
+            ),
           ),
         ),
-      ),
-      bottomNavigationBar: NavigationBar(
-        backgroundColor: Color.fromRGBO(251, 236, 241,1),
-        onDestinationSelected: (int index) {
-          setState(() {
-            currentPageIndex = index;
-          });
-        },
-        selectedIndex: currentPageIndex,
-        destinations: const <Widget>[
-          NavigationDestination(
-            icon: ImageIcon(
-              AssetImage("assets/images/navhome.png"),
+        bottomNavigationBar: NavigationBar(
+          backgroundColor: Color.fromRGBO(251, 236, 241,1),
+          onDestinationSelected: (int index) {
+            setState(() {
+              currentPageIndex = index;
+            });
+          },
+          selectedIndex: currentPageIndex,
+          destinations: const <Widget>[
+            NavigationDestination(
+              icon: ImageIcon(
+                AssetImage("assets/images/navhome.png"),
+              ),
+              label: '',
             ),
-            label: '',
-          ),
-
-          NavigationDestination(
-            icon: ImageIcon(
-              AssetImage("assets/images/navprofile.png"),
+      
+            NavigationDestination(
+              icon: ImageIcon(
+                AssetImage("assets/images/navprofile.png"),
+              ),
+              label: '',
             ),
-            label: '',
-          ),
-        ],
+          ],
+        ),
+        body: <Widget>[
+          /// Home page
+          HomeScreen(),
+          /// Profile,
+          profilePage(),
+        ][currentPageIndex],
       ),
-      body: <Widget>[
-        /// Home page
-        HomeScreen(),
-        /// Profile,
-        profilePage(),
-      ][currentPageIndex],
     );
   }
 }
