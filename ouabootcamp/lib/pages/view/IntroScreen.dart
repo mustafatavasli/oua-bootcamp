@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ouabootcamp/pages/view/BottomNavBar.dart';
+import 'package:ouabootcamp/pages/view/GeminiScreen.dart';
 import 'package:ouabootcamp/pages/view/LoginScreen.dart';
 import 'package:ouabootcamp/pages/view/SignUpScreen.dart';
 
@@ -77,10 +78,9 @@ class IntroScreen extends StatelessWidget {
 
             TextButton(
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => NavigationExample(),
-                  ),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GuestCardScreen()),
                 );
               },
               child: Text('Misafir Girişi',style: TextStyle(color: Colors.black),),
