@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 import 'LoginScreen.dart';
 
@@ -17,7 +18,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController _passwordController = TextEditingController();
   TextEditingController _nameController = TextEditingController();
   TextEditingController _surnameController = TextEditingController();
-
+  final _auth = AuthService();
   @override
   void dispose(){
     _emailController.dispose();
@@ -59,6 +60,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
       }
     );
   }
+
+
 
 
   @override
@@ -116,7 +119,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               SizedBox(height: 10),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  _auth.loginWithGoogle();
+                },
                 icon: Icon(Icons.g_translate),
                 label: Text('Google ile Kayıt Ol'),
                 style: ElevatedButton.styleFrom(
@@ -130,6 +135,26 @@ class _SignUpScreenState extends State<SignUpScreen> {
       ),
     );
   }
+}
+
+class AuthService {
+  final _auth = FirebaseAuth.instance;
+  Future<UserCredential?> loginWithGoogle() async{
+    try{
+      final googleUser = await GoogleSignIn().signIn();
+
+      final googleAuth = await googleUser?.authentication;
+
+      final cred = GoogleAuthProvider.credential(idToken: googleAuth?.idToken,accessToken:googleAuth?.accessToken);
+
+      return await _auth.signInWithCredential(cred);
+    }
+    catch(e){
+      print(e.toString());
+    }
+    return null;
+  }
+
 }
 
 
