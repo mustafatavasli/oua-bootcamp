@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HastalikEkle extends StatelessWidget {
   final TextEditingController _adController = TextEditingController();
-
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +54,6 @@ class HastalikEkle extends StatelessWidget {
                   ),
                 ),
               ),
-
               SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -68,12 +68,14 @@ class HastalikEkle extends StatelessWidget {
                           foregroundColor: Colors.white,
                           backgroundColor: Color(0xFF353A48),
                         ),
-                        onPressed: () {
+                        onPressed: () async {
                           if (_adController.text.isNotEmpty) {
-                            Map<String, String> alerjiData = {
+                            Map<String, String> hastalikData = {
                               'ad': _adController.text,
                             };
-                            Navigator.pop(context, alerjiData);
+                            // Firestore'a veri ekle
+                            await _firestore.collection('hastaliklar').add(hastalikData);
+                            Navigator.pop(context, hastalikData);
                           }
                         },
                         child: Text(
@@ -83,7 +85,6 @@ class HastalikEkle extends StatelessWidget {
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
-
                           ),
                         ),
                       ),

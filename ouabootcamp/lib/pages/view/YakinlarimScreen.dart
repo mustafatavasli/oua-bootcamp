@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ouabootcamp/pages/view/YakinlarimEkleScreen.dart';
 
 class YakinlarimScreen extends StatefulWidget {
@@ -7,13 +8,20 @@ class YakinlarimScreen extends StatefulWidget {
 }
 
 class _YakinlarimScreenState extends State<YakinlarimScreen> {
-  List<Map<String, String>> yakinlar = []; // Start with an empty list
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  late Stream<QuerySnapshot> yakinlarStream;
+
+  @override
+  void initState() {
+    super.initState();
+    yakinlarStream = _firestore.collection('yakinlar').snapshots();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(''), // Remove the text from the AppBar
+        title: Text(''),
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.only(right: 8.0),
@@ -26,79 +34,94 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
                   MaterialPageRoute(builder: (context) => YakinlarimEkleScreen()),
                 );
                 if (yeniYakin != null && yeniYakin is Map<String, String>) {
-                  setState(() {
-                    yakinlar.add(yeniYakin);
-                  });
+                  await _firestore.collection('yakinlar').add(yeniYakin);
                 }
               },
             ),
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(height: 25),
-            Padding(
-              padding: const EdgeInsets.only(left: 40.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Yakınlarım',
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 40,
-                    ),
-                  ),
-                  SizedBox(height: 25),
-                  Row(
+      body: StreamBuilder<QuerySnapshot>(
+        stream: yakinlarStream,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          }
+          if (!snapshot.hasData) {
+            return Center(child: Text('Henüz yakın eklenmemiş.'));
+          }
+          final yakinlarDocs = snapshot.data!.docs;
+          return SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(height: 25),
+                Padding(
+                  padding: const EdgeInsets.only(left: 40.0),
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/images/yakinlarim.png',
-                        width: 38,
-                        height: 36,
+                      Text(
+                        'Yakınlarım',
+                        style: TextStyle(
+                          fontFamily: 'DM Sans',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40,
+                        ),
                       ),
-                      SizedBox(width: 10),
-                      Column(
+                      SizedBox(height: 25),
+                      Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Acil anlarda hızlı bağlantı. Sevdikleriniz \nhep yanınızda!',
-                            style: TextStyle(
-                              fontFamily: 'DM Sans',
-                              fontSize: 14,
-                              fontWeight: FontWeight.normal,
-                            ),
+                          Image.asset(
+                            'assets/images/yakinlarim.png',
+                            width: 38,
+                            height: 36,
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Acil anlarda hızlı bağlantı. Sevdikleriniz \nhep yanınızda!',
+                                style: TextStyle(
+                                  fontFamily: 'DM Sans',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
+                      SizedBox(height: 40),
+                      Wrap(
+                        spacing: 15,
+                        runSpacing: 10,
+                        children: yakinlarDocs
+                            .map((doc) => _buildSquare(context, doc))
+                            .toList(),
+                      ),
                     ],
                   ),
-                  SizedBox(height: 40),
-                  Wrap(
-                    spacing: 15,
-                    runSpacing: 10,
-                    children: yakinlar.map((yakin) => _buildSquare(context, yakin['ad']!)).toList(),
-                  ),
-                ],
-              ),
+                ),
+                SizedBox(height: 16),
+                Center(
+                  child: Text(''),
+                ),
+                SizedBox(height: 16),
+              ],
             ),
-            SizedBox(height: 16),
-            Center(
-              child: Text(''),
-            ),
-            SizedBox(height: 16),
-          ],
-        ),
+          );
+        },
       ),
     );
   }
 
-  Widget _buildSquare(BuildContext context, String name) {
+  Widget _buildSquare(BuildContext context, DocumentSnapshot doc) {
+    final yakinData = doc.data() as Map<String, dynamic>;
+    final name = yakinData['ad'] as String;
+
     return Stack(
       children: [
         InkWell(
@@ -113,7 +136,7 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
             width: 144,
             height: 120,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 243, 198, 213),
+              color: Color.fromARGB(255, 255, 189, 189),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Stack(
@@ -147,10 +170,8 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
           right: 0,
           child: IconButton(
             icon: Icon(Icons.close, color: const Color.fromARGB(255, 0, 0, 0)),
-            onPressed: () {
-              setState(() {
-                yakinlar.removeWhere((yakin) => yakin['ad'] == name);
-              });
+            onPressed: () async {
+              await _firestore.collection('yakinlar').doc(doc.id).delete();
             },
           ),
         ),

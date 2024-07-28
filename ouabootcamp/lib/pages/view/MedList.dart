@@ -3,12 +3,9 @@ import 'package:flutter/material.dart';
 import 'MedAdd.dart';
 import 'homepage/cardsdesignbottom.dart';
 
-
 class MedList extends StatefulWidget {
   @override
   _MedListState createState() => _MedListState();
-
-
 }
 
 class _MedListState extends State<MedList> {
@@ -49,38 +46,44 @@ class _MedListState extends State<MedList> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'İlaç Hatırlatıcı',
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 40,
+                  Transform.translate(
+                    offset: Offset(20, 0),
+                    child: Text(
+                      'İlaç Hatırlatıcı',
+                      style: TextStyle(
+                        fontFamily: 'DM Sans',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40,
+                      ),
                     ),
                   ),
                   SizedBox(height: 25),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.asset(
-                        'assets/images/ilac.png',
-                        width: 38,
-                        height: 36,
-                      ),
-                      SizedBox(width: 10),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Daha sağlıklı günler için doğru zaman,\ndoğru ilaç',
-                            style: TextStyle(
-                              fontFamily: 'DM Sans',
-                              fontSize: 14,
-                              fontWeight: FontWeight.normal,
+                  Transform.translate(
+                    offset: Offset(20, 0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          'assets/images/ilac.png',
+                          width: 38,
+                          height: 36,
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Daha sağlıklı günler için doğru zaman,\ndoğru ilaç',
+                              style: TextStyle(
+                                fontFamily: 'DM Sans',
+                                fontSize: 14,
+                                fontWeight: FontWeight.normal,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 25),
                   Column(

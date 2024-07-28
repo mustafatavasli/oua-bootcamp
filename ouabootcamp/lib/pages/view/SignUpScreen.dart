@@ -30,36 +30,41 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   //auth
 
-  Future SignUp() async {
-    try{
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: _emailController.text.trim(),
-        password: _passwordController.text.trim(),
-      );
-      addUserDetails(_nameController.text.trim(),_surnameController.text.trim());
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Kayıt Başarıyla Oluşturuldu.')),
-      );
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => LoginScreen()),
-      );
-    }
-    catch(e){
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Kayıt başarısız.')),
-      );
-    }
-  }
+Future SignUp() async {
+  try {
+    // Kullanıcı oluştur
+    UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      email: _emailController.text.trim(),
+      password: _passwordController.text.trim(),
+    );
 
-  //userinfo
-  Future addUserDetails(String firstName,String LastName) async{
-    await FirebaseFirestore.instance.collection('userData').add(
-      {
-        'firstName': firstName,
-        'LastName': LastName,
-      }
+    // Kullanıcı bilgilerini Firestore'a ekle
+    await addUserDetails(_nameController.text.trim(), _surnameController.text.trim());
+
+    // Başarılı mesajı göster
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Kayıt Başarıyla Oluşturuldu.')),
+    );
+
+    // Login ekranına yönlendir
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (context) => LoginScreen()),
+    );
+  } catch (e) {
+    // Hata mesajı göster
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Kayıt başarısız.')),
     );
   }
+}
+
+Future addUserDetails(String firstName, String lastName) async {
+  await FirebaseFirestore.instance.collection('userData').add({
+    'firstName': firstName,
+    'lastName': lastName,
+  });
+}
+
 
 
 

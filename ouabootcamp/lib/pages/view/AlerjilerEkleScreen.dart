@@ -1,9 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 class AlerjilerEkleScreen extends StatelessWidget {
   final TextEditingController _adController = TextEditingController();
   final TextEditingController _dereceController = TextEditingController();
   final TextEditingController _aciklamaController = TextEditingController();
+
+    final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+    Future<void> _addAlerji(BuildContext context) async {
+    if (_adController.text.isNotEmpty &&
+        _dereceController.text.isNotEmpty &&
+        _aciklamaController.text.isNotEmpty) {
+      try {
+        await _firestore.collection('alerjiler').add({
+          'ad': _adController.text,
+          'derece': _dereceController.text,
+          'aciklama': _aciklamaController.text,
+          'timestamp': FieldValue.serverTimestamp(),
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Alerji başarıyla eklendi.')),
+        );
+      } catch (e) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Alerji eklenemedi: $e')),
+        );
+      }
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Lütfen tüm alanları doldurun.')),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

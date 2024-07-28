@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:ouabootcamp/pages/view/SplashScreen.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-void main() {
-  runApp(const SaglikPusulasi());
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  runApp(const SaglikPusulasi());
 }
 
 class SaglikPusulasi extends StatelessWidget {

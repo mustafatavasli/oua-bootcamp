@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ouabootcamp/pages/view/AlerjilerEkleScreen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ouabootcamp/pages/view/HastalikEkle.dart';
 
 class HastaliklarEkrani extends StatefulWidget {
@@ -8,7 +8,7 @@ class HastaliklarEkrani extends StatefulWidget {
 }
 
 class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
-  List<Map<String, String>> alerjiler = []; // Start with an empty list
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -22,91 +22,104 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
               icon: Icon(Icons.add),
               iconSize: 30,
               onPressed: () async {
-                final yeniAlerji = await Navigator.push(
+                final yeniHastalik = await Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => HastalikEkle()),
                 );
-                if (yeniAlerji != null && yeniAlerji is Map<String, String>) {
-                  setState(() {
-                    alerjiler.add(yeniAlerji);
-                  });
+                if (yeniHastalik != null && yeniHastalik is Map<String, String>) {
+                  _firestore.collection('hastaliklar').add(yeniHastalik);
                 }
               },
             ),
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(height: 25),
-            Padding(
-              padding: const EdgeInsets.only(left: 40.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Hastalıklar',
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 40,
-                    ),
-                  ),
-                  SizedBox(height: 25),
-                  Row(
+      body: StreamBuilder(
+        stream: _firestore.collection('hastaliklar').snapshots(),
+        builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+          if (!snapshot.hasData) {
+            return Center(child: CircularProgressIndicator());
+          }
+          final hastaliklar = snapshot.data!.docs;
+
+          return SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(height: 25),
+                Padding(
+                  padding: const EdgeInsets.only(left: 40.0),
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/images/hastaliklar.png',
-                        width: 38,
-                        height: 36,
+                      Text(
+                        'Hastalıklar',
+                        style: TextStyle(
+                          fontFamily: 'DM Sans',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40,
+                        ),
                       ),
-                      SizedBox(width: 10),
-                      Column(
+                      SizedBox(height: 25),
+                      Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Hastalıklarınızı buradan görebilir,\nönceden tedbir alabilirsiniz.',
-                            style: TextStyle(
-                              fontFamily: 'DM Sans',
-                              fontSize: 14,
-                              fontWeight: FontWeight.normal,
-                            ),
+                          Image.asset(
+                            'assets/images/hastaliklar.png',
+                            width: 38,
+                            height: 36,
+                          ),
+                          SizedBox(width: 10),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Hastalıklarınızı buradan görebilir,\nönceden tedbir alabilirsiniz.',
+                                style: TextStyle(
+                                  fontFamily: 'DM Sans',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
+                      SizedBox(height: 40),
+                      Wrap(
+                        spacing: 15,
+                        runSpacing: 10,
+                        children: hastaliklar.map((doc) {
+                          final data = doc.data() as Map<String, dynamic>;
+                          final name = data['ad'] as String;
+
+                          return _buildSquare(context, doc.id, name);
+                        }).toList(),
+                      ),
                     ],
                   ),
-                  SizedBox(height: 40),
-                  Wrap(
-                    spacing: 15,
-                    runSpacing: 10,
-                    children: alerjiler.map((alerji) => _buildSquare(context, alerji['ad']!)).toList(),
-                  ),
-                ],
-              ),
+                ),
+                SizedBox(height: 16),
+                Center(
+                  child: Text(''),
+                ),
+                SizedBox(height: 16),
+              ],
             ),
-            SizedBox(height: 16),
-            Center(
-              child: Text(''),
-            ),
-            SizedBox(height: 16),
-          ],
-        ),
+          );
+        },
       ),
     );
   }
 
-  Widget _buildSquare(BuildContext context, String name) {
+  Widget _buildSquare(BuildContext context, String docId, String name) {
     return Stack(
       children: [
         InkWell(
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => AlerjilerEkleScreen()),
+              MaterialPageRoute(builder: (context) => HastalikEkle()),
             );
           },
           child: Container(
@@ -149,9 +162,7 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
           child: IconButton(
             icon: Icon(Icons.close, color: const Color.fromARGB(255, 0, 0, 0)),
             onPressed: () {
-              setState(() {
-                alerjiler.removeWhere((alerji) => alerji['ad'] == name);
-              });
+              _firestore.collection('hastaliklar').doc(docId).delete();
             },
           ),
         ),

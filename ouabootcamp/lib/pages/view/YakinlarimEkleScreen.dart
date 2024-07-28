@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 class YakinlarimEkleScreen extends StatelessWidget {
   final TextEditingController _adController = TextEditingController();
@@ -8,9 +10,11 @@ class YakinlarimEkleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isButtonPressed = false;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(''),
+        title: Text('Yakın Ekle'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
@@ -145,6 +149,10 @@ class YakinlarimEkleScreen extends StatelessWidget {
                           backgroundColor: Color(0xFF353A48),
                         ),
                         onPressed: () {
+                          if (isButtonPressed) return;
+
+                          isButtonPressed = true;
+
                           if (_adController.text.isNotEmpty &&
                               _soyadController.text.isNotEmpty &&
                               _telefonController.text.isNotEmpty &&
