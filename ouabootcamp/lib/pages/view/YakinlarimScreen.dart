@@ -120,49 +120,66 @@ class _YakinlarimScreenState extends State<YakinlarimScreen> {
 
   Widget _buildSquare(BuildContext context, DocumentSnapshot doc) {
     final yakinData = doc.data() as Map<String, dynamic>;
-    final name = yakinData['ad'] as String;
+    final ad = yakinData['ad'] as String;
+    final soyad = yakinData['soyad'] as String;
+    final telefon = yakinData['telefon'] as String;
+    final yakinlik = yakinData['yakinlik'] as String;
 
     return Stack(
       children: [
-        InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => YakinlarimEkleScreen()),
-            );
-          },
-          child: Container(
-            margin: EdgeInsets.only(left: 5, bottom: 20),
-            width: 144,
-            height: 120,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 255, 189, 189),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Positioned(
-                  top: 25,
-                  child: Image.asset(
-                    'assets/images/kisikonu.png',
-                    width: 56,
-                    height: 56,
-                  ),
+        Container(
+          margin: EdgeInsets.only(left: 5, bottom: 20),
+          width: 144,
+          height: 144,
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 255, 189, 189),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Positioned(
+                top: 15,
+                child: Image.asset(
+                  'assets/images/kisikonu.png',
+                  width: 50,
+                  height: 50,
                 ),
-                Positioned(
-                  bottom: 10,
-                  child: Text(
-                    name,
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontSize: 14,
-                      fontWeight: FontWeight.normal,
+              ),
+              Positioned(
+                top: 75,
+                child: Column(
+                  children: [
+                    Text(
+                      '$ad $soyad',
+                      style: TextStyle(
+                        fontFamily: 'DM Sans',
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
+                    SizedBox(height: 5),
+                    Text(
+                      ' $telefon',
+                      style: TextStyle(
+                        fontFamily: 'DM Sans',
+                        fontSize: 12,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      ' $yakinlik',
+                      style: TextStyle(
+                        fontFamily: 'DM Sans',
+                        fontSize: 12,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         Positioned(

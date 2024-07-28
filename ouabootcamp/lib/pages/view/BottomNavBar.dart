@@ -44,7 +44,7 @@ class _NavigationExampleState extends State<NavigationExample> {
           ),
         ),
         bottomNavigationBar: NavigationBar(
-          backgroundColor: Color.fromRGBO(251, 236, 241,1),
+          backgroundColor: Color.fromRGBO(254, 226, 249, 1),
           onDestinationSelected: (int index) {
             setState(() {
               currentPageIndex = index;
@@ -71,7 +71,7 @@ class _NavigationExampleState extends State<NavigationExample> {
           /// Home page
           HomeScreen(),
           /// Profile,
-          profilePage(),
+          ProfileScreen(),
         ][currentPageIndex],
       ),
     );

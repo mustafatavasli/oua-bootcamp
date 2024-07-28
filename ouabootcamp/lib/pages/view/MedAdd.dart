@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class MedAdd extends StatefulWidget {
   @override
@@ -11,18 +11,13 @@ class MedAdd extends StatefulWidget {
 
 class _MedAddState extends State<MedAdd> {
   late final TextEditingController _dateController = TextEditingController();
-
   final TextEditingController _timeController = TextEditingController();
-
   final TextEditingController _nameController = TextEditingController();
-
   final TextEditingController _reasonController = TextEditingController();
 
   DateTime selectedDate = DateTime.now();
-
   final DateFormat formatter = DateFormat('dd-MM-yyyy');
   TimeOfDay selectedTime = TimeOfDay.now();
-
 
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
@@ -39,7 +34,23 @@ class _MedAddState extends State<MedAdd> {
     }
   }
 
+  Future<void> _addMedication() async {
+    if (_dateController.text.isNotEmpty &&
+        _timeController.text.isNotEmpty &&
+        _nameController.text.isNotEmpty &&
+        _reasonController.text.isNotEmpty) {
 
+      Map<String, String> medicationData = {
+        'date': DateFormat.MMMEd('tr-TR').format(selectedDate),
+        'time': _timeController.text,
+        'name': _nameController.text,
+        'reason': _reasonController.text,
+      };
+
+      await FirebaseFirestore.instance.collection('medications').add(medicationData);
+      Navigator.pop(context, medicationData);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +83,7 @@ class _MedAddState extends State<MedAdd> {
                   child: TextField(
                     controller: _dateController,
                     decoration: InputDecoration(
-                      labelText:'Tarih',
+                      labelText: 'Tarih',
                       suffixIcon: Icon(Icons.date_range),
                       labelStyle: TextStyle(
                         fontFamily: 'Montserrat',
@@ -84,7 +95,6 @@ class _MedAddState extends State<MedAdd> {
                     readOnly: true,
                     onTap: () {
                       _selectDate(context);
-
                     },
                     style: TextStyle(
                       fontFamily: 'Montserrat',
@@ -111,19 +121,19 @@ class _MedAddState extends State<MedAdd> {
                         color: Colors.black,
                       ),
                     ),
-                    onTap: () async{
+                    onTap: () async {
                       final TimeOfDay? timeOfDay = await showTimePicker(
-                          context: context,
-                          initialTime: selectedTime,
-                          initialEntryMode:TimePickerEntryMode.dial,
-                          builder: (BuildContext context, Widget? child) {
-                            return MediaQuery(
-                              data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
-                              child: child!,
+                        context: context,
+                        initialTime: selectedTime,
+                        initialEntryMode: TimePickerEntryMode.dial,
+                        builder: (BuildContext context, Widget? child) {
+                          return MediaQuery(
+                            data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
+                            child: child!,
                           );
                         },
                       );
-                      if(timeOfDay != null) {
+                      if (timeOfDay != null) {
                         setState(() {
                           selectedTime = timeOfDay;
                           _timeController.text = "${selectedTime.hour}:${selectedTime.minute}";
@@ -203,21 +213,7 @@ class _MedAddState extends State<MedAdd> {
                           foregroundColor: Colors.white,
                           backgroundColor: Color(0xFF353A48),
                         ),
-                        onPressed: () {
-                          if (_dateController.text.isNotEmpty &&
-                              _timeController.text.isNotEmpty &&
-                              _nameController.text.isNotEmpty &&
-                              _reasonController.text.isNotEmpty) {
-
-                            Map<String, String> yakinData = {
-                              'date': DateFormat.MMMEd('tr-TR').format(selectedDate),
-                              'time': _timeController.text,
-                              'name': _nameController.text,
-                              'reason': _reasonController.text,
-                            };
-                            Navigator.pop(context, yakinData);
-                          }
-                        },
+                        onPressed: _addMedication,
                         child: Text(
                           'İlaç Ekle',
                           style: TextStyle(
@@ -239,5 +235,3 @@ class _MedAddState extends State<MedAdd> {
     );
   }
 }
-
-

@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'MedAdd.dart';
 import 'homepage/cardsdesignbottom.dart';
 
@@ -9,8 +9,6 @@ class MedList extends StatefulWidget {
 }
 
 class _MedListState extends State<MedList> {
-  List<Map<String, String>> medications = []; // Start with an empty list
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,9 +25,7 @@ class _MedListState extends State<MedList> {
                   MaterialPageRoute(builder: (context) => MedAdd()),
                 );
                 if (newMedication != null && newMedication is Map<String, String>) {
-                  setState(() {
-                    medications.add(newMedication);
-                  });
+                  // MedAdd already adds to Firestore, so no need to add here
                 }
               },
             ),
@@ -42,7 +38,7 @@ class _MedListState extends State<MedList> {
           children: <Widget>[
             SizedBox(height: 25),
             Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -68,12 +64,12 @@ class _MedListState extends State<MedList> {
                           width: 38,
                           height: 36,
                         ),
-                        SizedBox(width: 10),
+                        SizedBox(width: 15),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Daha sağlıklı günler için doğru zaman,\ndoğru ilaç',
+                              'Daha sağlıklı günler için doğru zaman,\ndoğru ilaç.',
                               style: TextStyle(
                                 fontFamily: 'DM Sans',
                                 fontSize: 14,
@@ -86,37 +82,48 @@ class _MedListState extends State<MedList> {
                     ),
                   ),
                   SizedBox(height: 25),
-                  Column(
-                    children: medications.map((medication) {
+                  StreamBuilder<QuerySnapshot>(
+                    stream: FirebaseFirestore.instance.collection('medications').snapshots(),
+                    builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+                      if (!snapshot.hasData) {
+                        return Center(child: CircularProgressIndicator());
+                      }
+                      final medications = snapshot.data!.docs;
                       return Column(
-                        children: [
-                          Row(
+                        children: medications.map((doc) {
+                          final medication = doc.data() as Map<String, dynamic>;
+                          return Column(
                             children: [
-                              Expanded(
-                                flex: 6,
-                                child: CardExampleBottom(
-                                  date: medication['date']!,
-                                  time: medication['time']!,
-                                  name: medication['name']!,
-                                  reason: medication['reason']!,
-                                ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    flex: 6,
+                                    child: Stack(
+                                      children: [
+                                        CardExampleBottom(
+                                          date: medication['date']!,
+                                          time: medication['time']!,
+                                          name: medication['name']!,
+                                          reason: medication['reason']!,
+                                          key: Key(doc.id), // Ensure each card has a unique key
+                                          onDelete: () async {
+                                            await FirebaseFirestore.instance
+                                                .collection('medications')
+                                                .doc(doc.id)
+                                                .delete();
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
-                              Expanded(
-                                child: IconButton(
-                                  onPressed: () {
-                                    setState(() {
-                                      medications.remove(medication);
-                                    });
-                                  },
-                                  icon: Icon(Icons.close),
-                                ),
-                              ),
+                              SizedBox(height: 15),
                             ],
-                          ),
-                          SizedBox(height: 10),
-                        ],
+                          );
+                        }).toList(),
                       );
-                    }).toList(),
+                    },
                   ),
                 ],
               ),

@@ -119,45 +119,49 @@ class _AlerjilerScreenState extends State<AlerjilerScreen> {
   Widget _buildSquare(BuildContext context, QueryDocumentSnapshot alerji) {
     return Stack(
       children: [
-        InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => AlerjilerEkleScreen()),
-            );
-          },
-          child: Container(
-            margin: EdgeInsets.only(left: 5, bottom: 20),
-            width: 144,
-            height: 120,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 246, 197, 247),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Positioned(
-                  top: 25,
-                  child: Image.asset(
-                    'assets/images/alerji.png',
-                    width: 56,
-                    height: 56,
+        Container(
+          margin: EdgeInsets.only(left: 5, bottom: 20),
+          width: 144,
+          height: 140, // Adjust height to fit both name and degree
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 246, 197, 247),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Positioned(
+                top: 25,
+                child: Image.asset(
+                  'assets/images/alerji.png',
+                  width: 56,
+                  height: 56,
+                ),
+              ),
+              Positioned(
+                bottom: 30, // Adjust position for name
+                child: Text(
+                  alerji['ad'],
+                  style: TextStyle(
+                    fontFamily: 'DM Sans',
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
-                Positioned(
-                  bottom: 10,
-                  child: Text(
-                    alerji['ad'],
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontSize: 14,
-                      fontWeight: FontWeight.normal,
-                    ),
+              ),
+              Positioned(
+                bottom: 10, // Add position for degree
+                child: Text(
+                  alerji['derece'],
+                  style: TextStyle(
+                    fontFamily: 'DM Sans',
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal,
+                    color: const Color.fromARGB(255, 0, 0, 0),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         Positioned(

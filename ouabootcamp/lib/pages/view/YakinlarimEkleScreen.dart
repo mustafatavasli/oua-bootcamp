@@ -14,7 +14,7 @@ class YakinlarimEkleScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Yakın Ekle'),
+        title: Text(''),
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () {

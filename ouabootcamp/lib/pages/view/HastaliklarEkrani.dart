@@ -115,45 +115,37 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
   Widget _buildSquare(BuildContext context, String docId, String name) {
     return Stack(
       children: [
-        InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => HastalikEkle()),
-            );
-          },
-          child: Container(
-            margin: EdgeInsets.only(left: 5, bottom: 20),
-            width: 144,
-            height: 120,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(55, 6, 206, 255),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Positioned(
-                  top: 25,
-                  child: Image.asset(
-                    'assets/images/hastaliklarcard.png',
-                    width: 56,
-                    height: 56,
+        Container(
+          margin: EdgeInsets.only(left: 5, bottom: 20),
+          width: 144,
+          height: 120,
+          decoration: BoxDecoration(
+            color: Color.fromARGB(55, 6, 206, 255),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Positioned(
+                top: 25,
+                child: Image.asset(
+                  'assets/images/hastaliklarcard.png',
+                  width: 56,
+                  height: 56,
+                ),
+              ),
+              Positioned(
+                bottom: 10,
+                child: Text(
+                  name,
+                  style: TextStyle(
+                    fontFamily: 'DM Sans',
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
-                Positioned(
-                  bottom: 10,
-                  child: Text(
-                    name,
-                    style: TextStyle(
-                      fontFamily: 'DM Sans',
-                      fontSize: 14,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         Positioned(

@@ -12,7 +12,7 @@ class CardExampleMid extends StatelessWidget {
     return Center(
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
-        color: Color.fromRGBO(251, 236, 241,1),
+        color: Color.fromRGBO(254, 226, 249, 1),
         child:Row(
           children: [
             const Expanded(
@@ -28,7 +28,7 @@ class CardExampleMid extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
-                        color: Color.fromRGBO(135, 182, 172,1)
+                        color: Color.fromRGBO(51, 175, 149, 1)
                       ),
                     ),
                     SizedBox(height: 10),
