@@ -161,6 +161,10 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 
   ![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.40.44.png)
 
+## Product Backlog URL
+[F82 Product Backlog URL](https://trello.com/invite/b/669bddd8e7a219bd2ed8624a/ATTI0f6d27bd27a06470252a4af06a2b43a16A4D7307/saglik-pusulasi-f82-sprint-2)
+  
+
   </details>
   
  <details>
