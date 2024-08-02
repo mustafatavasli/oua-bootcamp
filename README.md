@@ -216,11 +216,11 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
   
 <h3>Sprint Notları</h3>
 <ul>
-<li>Backend ve API işlemlerinin tamamlanamadı.
-<li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması.</li>
+<li>Frontend ve API işlemleri son halini aldı.
+<li>Firebase entegrasyonunun derinleştirildi ve gerekli yapılandırmaların yapıldı.</li>
 <li>Flutter Healt Package'in entegresi tamamlanamadı.</li>
 <li>Firebase Push Notification entegrasyonu yapılamadı.</li>
-<li>KZaman yönetimi doğru şekilde yapılamadı.</li>
+<li>Zaman yönetimi doğru şekilde yapılamadı.</li>
 </ul>
 
   
@@ -228,7 +228,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 135 Puan
 
   ### Tahmin Mantığı
-Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk iki sprintte 215 puan tamamlanmıştır, üçüncü sprint için bitirilmesi gereken puan 135 olarak belirlenmiştir.
+Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk iki sprintte 215 puan tamamlanmıştır, üçüncü sprint için bitirilmesi gereken puan 135 olarak belirlenmiştir. Fakat 40 puanlık kısım tamamlanamadı.
 
   ### Daily Scrum
 WhatsApp ve Discord üzerinden günlük toplantılar yapılmaya devam edildi.
@@ -253,8 +253,8 @@ Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 
 <h3>Sprint Review</h3>
 <ul>
-  <li>Backend ve API işlemleri tamamlandı, tüm işlevler sorunsuz çalışıyor.</li>
-  <li>Firebase entegrasyonu tamamlanamadı, veritabanı ve kullanıcı kimlik doğrulama işlemleri tam olarak entegre edilemedi.</li>
+  <li>Frontend ve API işlemleri tamamlandı, tüm işlevler sorunsuz çalışıyor.</li>
+  <li>Firebase entegrasyonu tamamlandı, veritabanı ve kullanıcı kimlik doğrulama işlemleri entegre edildi.</li>
   <li>Flutter Health Package'ı uygulamaya eklerken uyumluluk ve bağımlılık sorunlarıyla karşılaşıldı. Bu sorunları çözmek için bağımlılıkları güncellemek ve resmi dökümantasyonu dikkatlice incelemek gerekmektedir.</li>
   <li>Firebase Push Notification entegrasyonu tamamlanamadı, planlama sıkıntısı yaşandı.</li>
 </ul>
@@ -262,7 +262,7 @@ Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 <h3>Sprint Retroperspective</h3>
 <ul>
   <li>Takım içi iletişim ve iş birliği süreci sorunsuz ilerledi.</li>
-  <li>Backend ve API işlemlerinde daha verimli çalışma yöntemleri geliştirildi.</li>
+  <li>Frontend ve API işlemlerinde daha verimli çalışma yöntemleri geliştirildi.</li>
   <li>Süre planlamasının daha iyi yapılması gerektiği belirlendi. Bu nedenle, gelecekteki projelerde daha ayrıntılı bir zaman yönetimi stratejisi geliştirilmesi önemlidir.</li>
 </ul>
 </details>
