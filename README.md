@@ -220,11 +220,6 @@ Toplantı ve WhatsApp Notları: [Link eklenecek]
 
 <details>
 <summary><h3>Sprint Board Updates</h3></summary>
-Sprint 3 F82 Product Backlog URL
-
-
-
-
 
 </details>
 <details>
