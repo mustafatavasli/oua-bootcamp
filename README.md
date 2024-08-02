@@ -238,6 +238,9 @@ Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 <summary><h3>Sprint Board Updates</h3></summary>
   
  ![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-08-02%2022.42.46.png)
+
+ ## Product Backlog URL
+[F82 Product Backlog URL](https://trello.com/invite/b/66ad20cc6ebf6738a6d0a746/ATTI7d3c2986b009f9c72624fb7273ae8637363B2B9B/saglik-pusulasi-f82-sprint-3)
  
 </details>
 
