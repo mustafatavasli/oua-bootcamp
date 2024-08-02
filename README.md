@@ -215,8 +215,8 @@ Tahmin Mantığı
 Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk iki sprintte 215 puan tamamlanmıştır, üçüncü sprint için bitirilmesi gereken puan 120 olarak belirlenmiştir.
 
 Daily Scrum
-WhatsApp ve Discord üzerinden günlük toplantılar yapılmaya devam edilecektir.
-Toplantı ve WhatsApp Notları: [Link eklenecek]
+WhatsApp ve Discord üzerinden günlük toplantılar yapılmaya devam edildi.
+Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 
 <details>
 <summary><h3>Sprint Board Updates</h3></summary>
