@@ -157,6 +157,10 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
    <details>
   <summary><h3>Sprint Board Updates</h3></summary>
 
+  ![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.42.40.png)
+
+  ![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.40.44.png)
+
   </details>
   
  <details>
