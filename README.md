@@ -206,6 +206,7 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
     <li>Üçüncü sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
      </ul>
 </details>
+<summary><h1>Sprint 3</h1></summary>
 
 
 
