@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 
 class GuestCardScreen extends StatefulWidget {
@@ -17,21 +16,23 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
         temperature: 0.5,
       ));
 
-  final myController = TextEditingController();
-  String prompt = "";
+  String prompt = "Her seferinde farklı bir hastalık hakkında 2 paragraflık bilgi ver";
 
-  void _tryGeminiAI() {
-    prompt = myController.text;
-    // setState() async olduğu için error veriyor, sorun değil.
-    setState(() async {
-      final content = [Content.text(prompt)];
-      response = await model.generateContent(content);
-    });
+  Future<void> _tryGeminiAI() async {
+    final content = [Content.text(prompt)];
+    response = await model.generateContent(content);
+
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _tryGeminiAI(); // Sayfa yüklendiğinde API çağrısını yap
   }
 
   @override
   void dispose() {
-    myController.dispose();
     super.dispose();
   }
 
@@ -47,7 +48,7 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Hoşgeldin,\nMisafir',
+                'Hoşgeldin Kullanıcı',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -66,40 +67,24 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 16),
-              TextField(
-                controller: myController,
-                decoration: InputDecoration(
-                  labelText: 'Ask to Gemini',
-                  prefixIcon: Icon(Icons.search),
+              SizedBox(height: 30),
+              Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+                color: Color.fromRGBO(254, 226, 249, 1),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      title: Text('Hastalık Bülteni',style: TextStyle(fontWeight: FontWeight.bold,letterSpacing: 0.5),),
+                      subtitle: Text(response?.text ?? ""),
+                    ),
+                  ],
                 ),
               ),
-              Card(
-                child: Text(response?.text ?? ""),
-              )
             ],
           ),
         ),
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.transparent,
-          color: Colors.blueAccent,
-          animationDuration: Duration(milliseconds: 300),
-          onTap: (index) {},
-          items: [
-            Icon(
-              Icons.home,
-              size: 30,
-            ),
-            IconButton(
-              icon: Icon(Icons.question_mark_outlined),
-              onPressed: _tryGeminiAI,
-            ),
-            Icon(
-              Icons.person_outline_rounded,
-              size: 30,
-            ),
-          ]),
     );
   }
 }

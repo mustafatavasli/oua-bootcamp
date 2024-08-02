@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'package:ouabootcamp/pages/view/MedList.dart';
 import 'package:ouabootcamp/pages/view/ProfileScreen.dart';
 import 'package:ouabootcamp/pages/view/homepage/HomeScreen.dart';
+import 'package:ouabootcamp/pages/view/GeminiScreen.dart';
+
 
 
 class NavigationExample extends StatefulWidget {
@@ -31,7 +33,11 @@ class _NavigationExampleState extends State<NavigationExample> {
             backgroundColor: Color.fromRGBO(251, 236, 241,1),
             elevation: 0,
             onPressed: () {
-      
+              // Navigate to GeminiScreen
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GuestCardScreen()),
+              );
             },
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
