@@ -200,21 +200,29 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
     <li>Üçüncü sprintte hedeflerimize ulaşmak için daha dengeli bir görev dağılımı ve sıkı takip ile çalışmaya devam edeceğiz. Ayrıca, backend, API işlemleri ve Firebase entegrasyonuna odaklanarak proje ilerlememizi sürdüreceğiz.</li>
      </ul>
 </details>
+
+
+
 <details>
 <summary><h1>Sprint 3</h1></summary>
-Sprint Notları
-Backend ve API işlemlerinin tamamlanması.
-Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması.
-Flutter Health Package entegrasyonu.
-Firebase Push Notification entegrasyonu.
-Kullanıcı testlerinin başlatılması ve geri bildirimlerin toplanması.
-Sprint İçinde Tahmin Edilen Tamamlanacak Puan
-120 Puan
+  
+<h3>Sprint Notları</h3>
+<ul>
+<li>Backend ve API işlemlerinin tamamlanamadı.
+<li>Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması.</li>
+<li>Flutter Healt Package'in entegresi tamamlanamadı.</li>
+<li>Firebase Push Notification entegrasyonu yapılamadı.</li>
+<li>KZaman yönetimi doğru şekilde yapılamadı.</li>
+</ul>
 
-Tahmin Mantığı
-Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk iki sprintte 215 puan tamamlanmıştır, üçüncü sprint için bitirilmesi gereken puan 120 olarak belirlenmiştir.
+  
+### Sprint İçinde Tahmin Edilen Tamamlanacak Puan
+135 Puan
 
-Daily Scrum
+  ### Tahmin Mantığı
+Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk iki sprintte 215 puan tamamlanmıştır, üçüncü sprint için bitirilmesi gereken puan 135 olarak belirlenmiştir.
+
+  ### Daily Scrum
 WhatsApp ve Discord üzerinden günlük toplantılar yapılmaya devam edildi.
 Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 
@@ -222,25 +230,27 @@ Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 <summary><h3>Sprint Board Updates</h3></summary>
 
 </details>
+
+
 <details>
 <summary><h3>Screenshots</h3></summary>
-  </tr>
-</table>
+
 </details>
+
+
 <h3>Sprint Review</h3>
 <ul>
   <li>Backend ve API işlemleri tamamlandı, tüm işlevler sorunsuz çalışıyor.</li>
-  <li>Firebase entegrasyonu tamamlandı, veritabanı ve kullanıcı kimlik doğrulama işlemleri başarıyla gerçekleştirildi.</li>
-  <li>Flutter Health Package uygulamaya başarıyla entegre edildi ve kullanıcıların sağlık verileri toplandı.</li>
-  <li>Firebase Push Notification entegrasyonu tamamlandı, kullanıcılar anlık bildirimler alabiliyor.</li>
-  <li>Kullanıcı testleri başlatıldı ve geri bildirimler toplandı, bu geri bildirimler doğrultusunda geliştirmeler yapılacak.</li>
+  <li>Firebase entegrasyonu tamamlanamadı, veritabanı ve kullanıcı kimlik doğrulama işlemleri tam olarak entegre edilemedi.</li>
+  <li>Flutter Health Package'ı uygulamaya eklerken uyumluluk ve bağımlılık sorunlarıyla karşılaşıldı. Bu sorunları çözmek için bağımlılıkları güncellemek ve resmi dökümantasyonu dikkatlice incelemek gerekmektedir. .</li>
+  <li>Firebase Push Notification entegrasyonu tamamlanamadı, planlama sıkıntısı yaşandı.</li>
 </ul>
+
 <h3>Sprint Retroperspective</h3>
 <ul>
   <li>Takım içi iletişim ve iş birliği süreci sorunsuz ilerledi.</li>
-  <li>Geri bildirimlerin daha hızlı toplanması için kullanıcı testlerinin daha erken başlatılması gerektiği fark edildi.</li>
-  <li>Gelecek sprintte, kullanıcı geri bildirimlerine göre iyileştirmeler yapılacak ve uygulamanın stabilitesi artırılacak.</li>
   <li>Backend ve API işlemlerinde daha verimli çalışma yöntemleri geliştirildi.</li>
+  <li>Süre planlamasının daha iyi yapılması gerektiği belirlendi. Bu nedenle, gelecekteki projelerde daha ayrıntılı bir zaman yönetimi stratejisi geliştirilmesi önemlidir.</li>
 </ul>
 </details>
 
