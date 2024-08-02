@@ -228,7 +228,9 @@ Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 
 <details>
 <summary><h3>Sprint Board Updates</h3></summary>
-
+  
+ ![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-08-02%2022.42.46.png)
+ 
 </details>
 
 
