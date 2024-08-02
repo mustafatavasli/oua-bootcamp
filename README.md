@@ -224,11 +224,6 @@ Toplantı ve WhatsApp Notları: https://imgur.com/a/CuC1Uip
 </details>
 <details>
 <summary><h3>Screenshots</h3></summary>
-Yeni Ekranlar ve Güncellemeler
-<table>
-  <tr>
-    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/NewFeature1.png?raw=true" alt="New Feature 1" width="200"/></td>
-    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/NewFeature2.png?raw=true" alt="New Feature 2" width="200"/></td>
   </tr>
 </table>
 </details>
