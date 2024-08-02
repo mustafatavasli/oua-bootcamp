@@ -157,12 +157,6 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
    <details>
   <summary><h3>Sprint Board Updates</h3></summary>
 
-  [Sprint 2 F82 Product Backlog URL](https://trello.com/invite/b/669bddd8e7a219bd2ed8624a/ATTI0f6d27bd27a06470252a4af06a2b43a16A4D7307/saglik-pusulasi-f82-sprint-2)
-
-![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.42.40.png)
-
-![Açıklama metni](https://raw.githubusercontent.com/mustafatavasli/oua-bootcamp/main/saglik_pusulasi/BoardUpdate/Ekran%20Resmi%202024-07-20%2022.40.44.png)
-
   </details>
   
  <details>
@@ -208,7 +202,57 @@ Daha kolay ve ulaşılabilir olduğu için Whatshapp ve Discord uygulaması üze
 </details>
 <details>
 <summary><h1>Sprint 3</h1></summary>
+Sprint Notları
+Backend ve API işlemlerinin tamamlanması.
+Firebase entegrasyonunun derinleştirilmesi ve gerekli yapılandırmaların yapılması.
+Flutter Health Package entegrasyonu.
+Firebase Push Notification entegrasyonu.
+Kullanıcı testlerinin başlatılması ve geri bildirimlerin toplanması.
+Sprint İçinde Tahmin Edilen Tamamlanacak Puan
+120 Puan
 
+Tahmin Mantığı
+Proje boyunca tamamlanması gereken backlog puanı 350'dir. İlk iki sprintte 215 puan tamamlanmıştır, üçüncü sprint için bitirilmesi gereken puan 120 olarak belirlenmiştir.
+
+Daily Scrum
+WhatsApp ve Discord üzerinden günlük toplantılar yapılmaya devam edilecektir.
+Toplantı ve WhatsApp Notları: [Link eklenecek]
+
+<details>
+<summary><h3>Sprint Board Updates</h3></summary>
+Sprint 3 F82 Product Backlog URL
+
+
+
+
+
+</details>
+<details>
+<summary><h3>Screenshots</h3></summary>
+Yeni Ekranlar ve Güncellemeler
+<table>
+  <tr>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/NewFeature1.png?raw=true" alt="New Feature 1" width="200"/></td>
+    <td><img src="https://github.com/mustafatavasli/oua-bootcamp/blob/main/saglik_pusulasi/Screenshots/NewFeature2.png?raw=true" alt="New Feature 2" width="200"/></td>
+  </tr>
+</table>
+</details>
+<h3>Sprint Review</h3>
+<ul>
+  <li>Backend ve API işlemleri tamamlandı, tüm işlevler sorunsuz çalışıyor.</li>
+  <li>Firebase entegrasyonu tamamlandı, veritabanı ve kullanıcı kimlik doğrulama işlemleri başarıyla gerçekleştirildi.</li>
+  <li>Flutter Health Package uygulamaya başarıyla entegre edildi ve kullanıcıların sağlık verileri toplandı.</li>
+  <li>Firebase Push Notification entegrasyonu tamamlandı, kullanıcılar anlık bildirimler alabiliyor.</li>
+  <li>Kullanıcı testleri başlatıldı ve geri bildirimler toplandı, bu geri bildirimler doğrultusunda geliştirmeler yapılacak.</li>
+</ul>
+<h3>Sprint Retroperspective</h3>
+<ul>
+  <li>Takım içi iletişim ve iş birliği süreci sorunsuz ilerledi.</li>
+  <li>Geri bildirimlerin daha hızlı toplanması için kullanıcı testlerinin daha erken başlatılması gerektiği fark edildi.</li>
+  <li>Gelecek sprintte, kullanıcı geri bildirimlerine göre iyileştirmeler yapılacak ve uygulamanın stabilitesi artırılacak.</li>
+  <li>Backend ve API işlemlerinde daha verimli çalışma yöntemleri geliştirildi.</li>
+</ul>
+</details>
 
 
 
