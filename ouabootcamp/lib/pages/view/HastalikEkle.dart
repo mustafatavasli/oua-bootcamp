@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HastalikEkle extends StatelessWidget {
   final TextEditingController _adController = TextEditingController();
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -73,8 +72,6 @@ class HastalikEkle extends StatelessWidget {
                             Map<String, String> hastalikData = {
                               'ad': _adController.text,
                             };
-                            // Firestore'a veri ekle
-                            await _firestore.collection('hastaliklar').add(hastalikData);
                             Navigator.pop(context, hastalikData);
                           }
                         },

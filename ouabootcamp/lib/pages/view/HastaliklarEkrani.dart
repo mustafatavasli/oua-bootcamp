@@ -27,7 +27,7 @@ class _HastaliklarEkraniState extends State<HastaliklarEkrani> {
                   MaterialPageRoute(builder: (context) => HastalikEkle()),
                 );
                 if (yeniHastalik != null && yeniHastalik is Map<String, String>) {
-                  _firestore.collection('hastaliklar').add(yeniHastalik);
+                  await _firestore.collection('hastaliklar').add(yeniHastalik);
                 }
               },
             ),
