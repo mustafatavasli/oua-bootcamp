@@ -1,13 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ouabootcamp/pages/view/BottomNavBar.dart';
-import 'package:ouabootcamp/pages/view/homepage/HomeScreen.dart';
+import 'package:ouabootcamp/pages/view/GeminiScreen2.dart'; // GeminiScreen2'yi doğru şekilde import edin
 import 'package:ouabootcamp/pages/view/LoginScreen.dart';
 import 'package:ouabootcamp/pages/view/SignUpScreen.dart';
 
+<<<<<<< HEAD
 import 'GeminiScreen.dart';
 
 
+=======
+>>>>>>> 72d765ce4dc0a4648a0455fa25394f917b00e03b
 class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,8 +25,7 @@ class IntroScreen extends StatelessWidget {
               margin: EdgeInsets.only(right: 90),
               child: Text(
                 'Sağlık Pusulası',
-                style: TextStyle(fontSize: 22,fontFamily: 'Cinzel'),
-
+                style: TextStyle(fontSize: 22, fontFamily: 'Cinzel'),
               ),
             ),
             SizedBox(height: 10),
@@ -33,13 +34,11 @@ class IntroScreen extends StatelessWidget {
               margin: EdgeInsets.only(left: 32),
               child: Text(
                 'Anında bilgi, hızlı müdahale, sağlıklı yaşam.',
-                style: TextStyle(fontSize: 16,fontFamily: 'Montserrat',fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 16, fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
                 textAlign: TextAlign.left,
-
               ),
             ),
             SizedBox(height: 70),
-
             Row(
               children: <Widget>[
                 Expanded(
@@ -55,9 +54,12 @@ class IntroScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => LoginScreen()),
                       );
                     },
-                    child: Text('Giriş Yap',style: TextStyle(color: Colors.white),),
-
-                ),),
+                    child: Text(
+                      'Giriş Yap',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
                 Expanded(child: SizedBox()),
                 Expanded(
                   flex: 7,
@@ -72,20 +74,32 @@ class IntroScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => SignUpScreen()),
                       );
                     },
-                    child: Text('Kayıt Ol',style: TextStyle(color: Colors.black),),
-                  ),),
+                    child: Text(
+                      'Kayıt Ol',
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ),
+                ),
               ],
             ),
             SizedBox(height: 10),
-
             TextButton(
               onPressed: () {
+<<<<<<< HEAD
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => GuestCardScreen()),
+=======
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => GuestCardScreen2()),
+>>>>>>> 72d765ce4dc0a4648a0455fa25394f917b00e03b
                 );
               },
-              child: Text('Misafir Girişi',style: TextStyle(color: Colors.black),),
+              child: Text(
+                'Misafir Girişi',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),

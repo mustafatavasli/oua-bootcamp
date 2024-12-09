@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 
 class GuestCardScreen extends StatefulWidget {
@@ -18,6 +17,7 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
       ));
 
   String prompt = "Her seferinde farklı bir hastalık hakkında 2 paragraflık bilgi ver";
+<<<<<<< HEAD
 
   Future<void> _tryGeminiAI() async {
 
@@ -26,6 +26,20 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
 
       setState(() {});
 
+=======
+
+  Future<void> _tryGeminiAI() async {
+    final content = [Content.text(prompt)];
+    response = await model.generateContent(content);
+
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _tryGeminiAI(); // Sayfa yüklendiğinde API çağrısını yap
+>>>>>>> 72d765ce4dc0a4648a0455fa25394f917b00e03b
   }
 
   @override
@@ -45,7 +59,11 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
+<<<<<<< HEAD
                 'Hoşgeldin Misafir',
+=======
+                'Hoşgeldin Kullanıcı',
+>>>>>>> 72d765ce4dc0a4648a0455fa25394f917b00e03b
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -67,7 +85,11 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
               SizedBox(height: 30),
               Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+<<<<<<< HEAD
                 color: Color.fromRGBO(251, 236, 241,1),
+=======
+                color: Color.fromRGBO(254, 226, 249, 1),
+>>>>>>> 72d765ce4dc0a4648a0455fa25394f917b00e03b
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
@@ -82,25 +104,6 @@ class _GuestCardScreenState extends State<GuestCardScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.transparent,
-          color: Colors.blueAccent,
-          animationDuration: Duration(milliseconds: 300),
-          onTap: (index) {},
-          items: [
-            Icon(
-              Icons.home,
-              size: 30,
-            ),
-            IconButton(
-              icon: Icon(Icons.question_mark_outlined),
-              onPressed: _tryGeminiAI,
-            ),
-            Icon(
-              Icons.person_outline_rounded,
-              size: 30,
-            ),
-          ]),
     );
   }
 }

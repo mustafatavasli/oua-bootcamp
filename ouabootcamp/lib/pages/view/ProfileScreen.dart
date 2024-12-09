@@ -6,15 +6,19 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Align(
-          alignment: Alignment.centerLeft,
-          child: Text(
-            'Sağlık Pusulası',
-            style: TextStyle(
-              fontFamily: 'Cinzel',
-              fontSize: 22,
+        automaticallyImplyLeading: false, // Geri butonunu kaldırır
+          title: Row(
+          children: [
+            Image.asset('assets/images/Logo.png', height: 40),
+            Text(
+              'Sağlık Pusulası',
+              style: TextStyle(
+                fontFamily: 'Cinzel',
+                fontSize: 20,
+                letterSpacing: 1,
+              ),
             ),
-          ),
+          ],
         ),
         actions: <Widget>[
           Padding(
@@ -47,7 +51,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10), 
+            SizedBox(height: 10),
             Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,13 +59,13 @@ class ProfileScreen extends StatelessWidget {
                   Stack(
                     children: [
                       Transform.translate(
-                        offset: Offset(13, 0), 
+                        offset: Offset(13, 0),
                         child: Container(
                           width: 334,
                           height: 154,
                           decoration: BoxDecoration(
                             color: Color.fromARGB(255, 158, 216, 228),
-                            borderRadius: BorderRadius.circular(15), 
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Stack(
                             children: [
@@ -107,7 +111,7 @@ class ProfileScreen extends StatelessWidget {
                                   height: 109,
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
-                                      image: AssetImage('assets/images/3.png'), 
+                                      image: AssetImage('assets/images/3.png'),
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -119,17 +123,17 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10), 
+                  SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
                         width: 159,
                         height: 120,
-                        margin: EdgeInsets.symmetric(horizontal: 5), 
+                        margin: EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 236, 166, 171), 
-                          borderRadius: BorderRadius.circular(15), 
+                          color: Color.fromARGB(255, 236, 166, 171),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Stack(
                           children: [
@@ -141,7 +145,7 @@ class ProfileScreen extends StatelessWidget {
                                 height: 25,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/images/1.png'), 
+                                    image: AssetImage('assets/images/1.png'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -176,10 +180,10 @@ class ProfileScreen extends StatelessWidget {
                       Container(
                         width: 159,
                         height: 120,
-                        margin: EdgeInsets.symmetric(horizontal: 5), 
+                        margin: EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 152, 212, 173), 
-                          borderRadius: BorderRadius.circular(15), 
+                          color: Color.fromARGB(255, 152, 212, 173),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Stack(
                           children: [
@@ -191,7 +195,7 @@ class ProfileScreen extends StatelessWidget {
                                 height: 25,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/images/2.png'), 
+                                    image: AssetImage('assets/images/2.png'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -225,7 +229,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20), 
+                  SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.only(left: 10.0),
                     child: Text(
@@ -243,38 +247,38 @@ class ProfileScreen extends StatelessWidget {
                         Container(
                           width: 334,
                           height: 90,
-                          margin: EdgeInsets.only(bottom: 10), 
+                          margin: EdgeInsets.only(bottom: 10),
                           decoration: BoxDecoration(
-                            color: Colors.white, 
+                            color: Colors.white,
                             borderRadius: BorderRadius.circular(15),
                             border: Border.all(
-                              color: Colors.black, 
-                              width: 0.5, 
+                              color: Colors.black,
+                              width: 0.5,
                             ),
                           ),
                           child: Stack(
                             children: [
                               Row(
                                 children: [
-                                  SizedBox(width: 20), 
+                                  SizedBox(width: 20),
                                   Container(
                                     width: 60,
                                     height: 60,
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage('assets/images/6.png'), 
+                                        image: AssetImage('assets/images/6.png'),
                                         fit: BoxFit.cover,
                                       ),
                                     ),
                                   ),
-                                  SizedBox(width: 20), 
+                                  SizedBox(width: 20),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        SizedBox(height: 25), 
+                                        SizedBox(height: 25),
                                         Text(
-                                          'Sara Nöbeti ',
+                                          'Sara Nöbeti',
                                           style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold,
@@ -283,7 +287,7 @@ class ProfileScreen extends StatelessWidget {
                                         ),
                                         SizedBox(height: 1),
                                         Text(
-                                          '5 Files',
+                                          '5 Dosya',
                                           style: TextStyle(
                                             fontSize: 14,
                                             color: Colors.black,
@@ -301,34 +305,34 @@ class ProfileScreen extends StatelessWidget {
                           width: 334,
                           height: 90,
                           decoration: BoxDecoration(
-                            color: Colors.white, 
-                            borderRadius: BorderRadius.circular(15), 
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(15),
                             border: Border.all(
-                              color: Colors.black, 
-                              width: 0.5, 
+                              color: Colors.black,
+                              width: 0.5,
                             ),
                           ),
                           child: Stack(
                             children: [
                               Row(
                                 children: [
-                                  SizedBox(width: 20), 
+                                  SizedBox(width: 20),
                                   Container(
                                     width: 60,
                                     height: 60,
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage('assets/images/7.png'), 
+                                        image: AssetImage('assets/images/7.png'),
                                         fit: BoxFit.cover,
                                       ),
                                     ),
                                   ),
-                                  SizedBox(width: 20), 
+                                  SizedBox(width: 20),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        SizedBox(height: 25), 
+                                        SizedBox(height: 25),
                                         Text(
                                           'Sara Nöbeti',
                                           style: TextStyle(
@@ -339,7 +343,7 @@ class ProfileScreen extends StatelessWidget {
                                         ),
                                         SizedBox(height: 1),
                                         Text(
-                                          '5 Files',
+                                          '5 Dosya',
                                           style: TextStyle(
                                             fontSize: 14,
                                             color: Colors.black,
