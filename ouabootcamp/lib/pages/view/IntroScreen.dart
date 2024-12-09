@@ -5,6 +5,8 @@ import 'package:ouabootcamp/pages/view/homepage/HomeScreen.dart';
 import 'package:ouabootcamp/pages/view/LoginScreen.dart';
 import 'package:ouabootcamp/pages/view/SignUpScreen.dart';
 
+import 'GeminiScreen.dart';
+
 
 class IntroScreen extends StatelessWidget {
   @override
@@ -78,10 +80,9 @@ class IntroScreen extends StatelessWidget {
 
             TextButton(
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => NavigationExample(),
-                  ),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GuestCardScreen()),
                 );
               },
               child: Text('Misafir Girişi',style: TextStyle(color: Colors.black),),
